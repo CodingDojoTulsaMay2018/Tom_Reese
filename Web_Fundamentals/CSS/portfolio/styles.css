@@ -1,14 +1,40 @@
 .container {
     background-color: lightgrey;
     width: 1118px;
-    height: 1000px;
-    padding: 60px 0px 60px 0px;
+    height: 1130px;
+    padding: 0px 0px 60px 0px;
+}
+
+.topname {
+    /* text-align: center, left;
+    margin: 20px, 0px, 20px, 0px; */
+    display: inline-block;
+    font-size: 50px;
+    width: 260px;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: auto;
+    /* background-color: greenyellow; */
+}
+
+.topname2 {
+    /* text-align: center, left;
+    margin: 20px, 0px, 20px, 0px; */
+    display: inline-block;
+    font-size: 44px;
+    width: 665px;
+    vertical-align: top;
+    margin-top: 19px;
+    margin-left: 158px;
+    height: 46px;
+    /* background-color: greenyellow; */
 }
 
 .main {
-    background:linear-gradient(rgb(77, 1, 77), white, rgb(77, 1, 77));
+    background:linear-gradient(rgb(77, 1, 77), white, rgb(49, 22, 49));
     width: auto;
-    height: 960px;
+    height: 980px;
+    margin-top: 20px;
     padding: 20px;
 }
 
@@ -21,7 +47,7 @@
 
 .about h2 {
     display: block;
-    background: darkgrey;
+    background: linear-gradient(to right, rgb(105, 105, 105), white);
     margin: 0 auto;
     padding: 5px;
     color: rgb(252, 241, 241);;
@@ -44,54 +70,135 @@
 
 .leftbox, .middlebox {
     display: inline-block;
-    background: blue;
+    background-color: rgb(218, 202, 202);
     vertical-align: top;
-
+    text-justify: auto;
     margin-top: 20px;
     margin-right: 20px;
     width: 340px;
-    height: 600px;
+    height: 630px;
 
 }
 
 .ltitle, .mtitle, .rtitle {
     display: inline-block;
+    padding: 10px;
+    text-align: left;
+    font-size: 32px;
     color: white;
-    background: black;
+    background: linear-gradient(to right, rgb(105, 105, 105), white);
     /* margin-top: 20px;
     margin-right: 20px; */
-    width: 340px;
-    height: 60px;
+    width: 320px;
+    height: 36px;
 }
 
-.ltech, .mtech, .rtech {
+.boxes {
+    display: inline;
+    max-width: 340px;
+    position: relative;
+}
+
+.ltech {
     display: inline-block;
     color: white;
-    background: black;
-    margin-top: 300px;
+    background: linear-gradient(to right, rgb(105, 105, 105), white);
+    font-size: 32px;
+    padding-left: 10px;
     /* margin-top: 20px;
     margin-right: 20px; */
-    width: 340px;
-    height: 60px;
+    width: 330px;
+    height: 45px;
+}
+
+.mtech {
+    display: inline-block;
+    color: white;
+    background: linear-gradient(to right, rgb(105, 105, 105), white);
+    margin-top: 20px;
+    font-size: 32px;
+    padding-left: 10px;
+    /* margin-top: 20px;
+    margin-right: 20px; */
+    width: 330px;
+    height: 44px;
+}
+
+.rtech {
+    display: inline-block;
+    color: white;
+    background: linear-gradient(to right, rgb(105, 105, 105), white);
+    margin-top: 2px;
+    font-size: 32px;
+    padding-left: 10px;
+    /* margin-top: 20px;
+    margin-right: 20px; */
+    width: 330px;
+    height: 44px;
 }
 
 .lbtn, .mbtn, .rbtn {
     display: inline-block;
     color: white;
-    background: black;
-    margin-top: 120px;
+    background: green;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 130px;
+    padding: 5px;
     /* margin-top: 20px;
     margin-right: 20px; */
-    width: 340px;
-    height: 60px;
+    width: auto;
+    height: 22px;
+    border: 1px solid black;
+    box-shadow: 5px 5px grey;
+}
+
+p {
+    padding: 0px 15px;
 }
 
 .rightbox {
     display: inline-block;
-    background: blue;
+    background-color: rgb(218, 202, 202);
     margin-top: 20px;
     margin-right: 10px;
     width: 340px;
-    height: 600px;
+    height: 630px;
+}
 
+.thumbs {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    max-width: 52px;
+    position: relative;
+}
+
+.contact{
+    display: block;
+    font-size: 22px;
+    width: 390px;
+    margin-top: 10px;
+    margin-left: 390px;
+    height: auto;
+    /* background-color: greenyellow; */
+}
+
+.contact2{
+    display: block;
+    font-size: 22px;
+    text-decoration: underline;
+    width: 510px;
+    margin-top: 2px;
+    margin-left: 302px;
+    height: auto;
+    /* background-color: greenyellow; */
+}
+
+.thumbs2 {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    max-width: 22px;
+    position: relative;
 }
