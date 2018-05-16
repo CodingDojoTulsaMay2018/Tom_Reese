@@ -1,0 +1,13 @@
+body {
+    width: 970px;
+    height: 1000px;
+    background-image: url(python-BSD.png);
+    border: 1px solid red;
+}
+
+.container {
+   width: 970px;
+   height: 100%;
+   margin: 0 auto;
+   object-fit: contain;
+}
