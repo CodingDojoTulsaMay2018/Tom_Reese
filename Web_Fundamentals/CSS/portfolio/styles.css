@@ -1,0 +1,97 @@
+.container {
+    background-color: lightgrey;
+    width: 1118px;
+    height: 1000px;
+    padding: 60px 0px 60px 0px;
+}
+
+.main {
+    background:linear-gradient(rgb(77, 1, 77), white, rgb(77, 1, 77));
+    width: auto;
+    height: 960px;
+    padding: 20px;
+}
+
+.personal {
+    display: inline-block;
+    width: 470px;
+    border: 5px solid lightgrey;
+    margin-right: 15px;
+}
+
+.about h2 {
+    display: block;
+    background: darkgrey;
+    margin: 0 auto;
+    padding: 5px;
+    color: rgb(252, 241, 241);;
+}
+
+.about {
+    display: inline-block;
+    width: 570px;
+    height: auto;
+    font-size: 18px;
+    vertical-align: top;
+    background-color: rgb(218, 202, 202);
+    /* border: 5px solid lightgrey; */
+}
+
+.abouttxt {
+    padding: 15px;
+    
+}
+
+.leftbox, .middlebox {
+    display: inline-block;
+    background: blue;
+    vertical-align: top;
+
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 340px;
+    height: 600px;
+
+}
+
+.ltitle, .mtitle, .rtitle {
+    display: inline-block;
+    color: white;
+    background: black;
+    /* margin-top: 20px;
+    margin-right: 20px; */
+    width: 340px;
+    height: 60px;
+}
+
+.ltech, .mtech, .rtech {
+    display: inline-block;
+    color: white;
+    background: black;
+    margin-top: 300px;
+    /* margin-top: 20px;
+    margin-right: 20px; */
+    width: 340px;
+    height: 60px;
+}
+
+.lbtn, .mbtn, .rbtn {
+    display: inline-block;
+    color: white;
+    background: black;
+    margin-top: 120px;
+    /* margin-top: 20px;
+    margin-right: 20px; */
+    width: 340px;
+    height: 60px;
+}
+
+.rightbox {
+    display: inline-block;
+    background: blue;
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 340px;
+    height: 600px;
+
+}
