@@ -10,7 +10,7 @@ body {
    width: 970px;
    height: 100%;
    margin: 0 auto;
-   border: 1px solid black;
+   /* border: 1px solid black; */
    /* background-image: url(python-BSD.png); */
    background-size: contain;
    /* opacity: .6; */
