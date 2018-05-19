@@ -156,3 +156,6 @@ console.log(y); // should log [1,4,9]
  
 y = squareValue([2,5,8]);
 console.log(y); // should log [4,25,64]
+
+
+
