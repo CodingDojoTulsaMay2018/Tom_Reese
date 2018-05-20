@@ -1,0 +1,73 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-area: 
+    "navbtn navbtn navbtn navbtn";
+    /* grid-gap: 1%; */
+}
+
+.navbtn {
+    /* padding: 1%; */
+    height: 10em;
+    width: 100%;
+    object-fit: contain;
+    border: 2px solid black;
+    /* display: inline-flex; */
+}
+
+
+@media only screen and (max-width: 480px){
+    /* we will set these stylings only if the device is a screen with a width of 480px or less */
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: 
+    "navbtn" 
+    "navbtn"
+    "navbtn" 
+    "navbtn";
+    grid-gap: 1%;
+}
+
+.navbtn {
+    background-color: yellow;
+}
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 1023px){
+    /*we will set these stylings only if the device is a screen with a width of 480px or less */
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area: 
+    "navbtn navbtn navbtn navbtn";
+    grid-gap: 1%;
+}
+
+.navbtn {
+    background-color: blue;
+} 
+}
+
+
+@media only screen and (min-width: 1024px){
+    /* we will set these stylings only if the device is a screen with a width of 480px or less */
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-area: 
+    "navbtn navbtn navbtn navbtn";
+    grid-gap: 1%;
+    /* grid-gap: 1%; */
+}
+
+.navbtn {
+        background-color: red  ;
+}
+}
