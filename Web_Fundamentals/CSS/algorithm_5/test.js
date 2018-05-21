@@ -31,7 +31,6 @@ moveOver([1,2,3]);
 
 // Given an array, return an array with values in a reversed order.  For example, returnReversed([1,2,3]) should return [3,2,1].
 
-
 function revOrd(x){
 x.reverse(x);
 console.log(x);
@@ -39,19 +38,21 @@ console.log(x);
 
 revOrd([1,2,3,4,5]);
 
-// function revOrd2(b){
-//   var p = [];
-//   var i = 0;
-//   var l = -1
-//   var sum = 0;
-//   var j = b.length;
-//   while (i<j) {
-//     p.push(j+l)
-//     l=l+(l);
-//     sum++;
-//   }
-//   console.log(p);
-// }
+function revOrd2(b){
+  var p = [];
+  var i = 0;
+  var l = -1
+  var sum = 0;
+  var j = b.length;
+  while (i<j) {
+    p.push(j+l)
+    l=l+(l);
+    sum++;
+  }
+  console.log(p);
+}
+
+
 // revOrd2([1,2,3,4,5]);
 // Create a function that changes a given array to list each original element twice, retaining original order.  Have the function return the new array.  For example repeatTwice( [4,”Ulysses”, 42, false] ) should return [4,4, “Ulysses”, “Ulysses”, 42, 42, false, false].
 
