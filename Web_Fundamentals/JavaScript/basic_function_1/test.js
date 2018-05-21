@@ -1,24 +1,24 @@
-function a(){
-  return 35;
-}
+ function a(){
+   return 35;
+ }
 console.log(a())
 
-//nothing *2
+//  output = 35
 
 function a(){
   return 4;
 }
 console.log(a()+a());
 
-// 4,4,8
+//  output = 8
 
 
-function a(b){
-  return b;
-}
-console.log(a(2)+a(4));
+ function a(b){
+   return b;
+ }
+ console.log(a(2)+a(4));
 
-// 2,4,6
+//  output = 6
 
 function a(b){
       console.log(b);
@@ -26,7 +26,7 @@ function a(b){
   }
   console.log(a(3));
 
-// 3,9
+// output = 3,9
 
 function a(b){
     return b*4;
@@ -34,7 +34,7 @@ function a(b){
  }
  console.log(a(10));
 
-// 40
+// output = 40
 
  function a(b){
   if(b<10) {
@@ -47,7 +47,7 @@ function a(b){
 }
 console.log(a(15));
 
-// 2
+// output = 4
 
 function a(b,c){
   return b*c;
@@ -55,7 +55,7 @@ function a(b,c){
 console.log(10,3);
 console.log( a(3,10) );
 
-// 30,30,30
+// output = 10,3,30
 
 function a(b){
   for(i=0; i<10; i++){
@@ -66,7 +66,7 @@ function a(b){
 console.log(3);
 console.log(4);
 
-// 0,1,2,3,4,5,6,7,8,9,9  0,1,2,3,4,5,6,7,8,9,9
+// output = 3, 4 
 
 function a(){
   for(i=0; i<10; i++){
@@ -76,18 +76,18 @@ function a(){
 }
 a();
 
-// 2,4,6,8,10
+// output = 2,5,8,11
 
 function a(b,c){
   for(i=b; i<c; i++) {
      console.log(i);
  }
- returncopy b*c;
+ return b*c;
 }
 a(0,10);
-console.log(a(0,10
+console.log(a(0,10));
 
-// 0,1,2,3,4,5,6,7,8,9   0,1,2,3,4,5,6,7,8,9  0,1,2,3,4,5,6,7,8,9  0
+// output = 0,1,2,3,4,5,6,7,8,9   0,1,2,3,4,5,6,7,8,9  0
 
   function a(){
     for(i=0; i<10; i++){
@@ -98,7 +98,7 @@ console.log(a(0,10
     }
 }
 
-// nothing
+// output = nothing
 
 
 function a(){
@@ -109,7 +109,7 @@ function a(){
   console.log(j,i);
 }
 
-// error:syntax
+// output = error:syntax
 
 z = 10;
 function a(){
@@ -118,7 +118,7 @@ function a(){
 }
 console.log(z);
 
-// 10
+// output = 10
 
 z = 10;
 function a(){
@@ -128,7 +128,7 @@ function a(){
 a();
 console.log(z);
 
-// 15,10
+// output = 15,15
 
 
 z = 10;
@@ -140,4 +140,4 @@ function a(){
 z = a();
 console.log(z);
 
-// 15/15
+// output = 15,15
