@@ -1,0 +1,45 @@
+* {
+    height: 98%;
+}
+body {
+    margin: 0 auto;
+}
+.wrapper  {
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-row-gap: 5%;
+    padding: 1%;
+}
+.t1p {
+    background-color: red;
+    font-size: calc(4vw + 4vh + 2vmin);
+    padding: 1%;
+}
+.m2ddle {
+    background-color: darkgrey;
+    font-size: calc(2vw + 3vh + 1vmin);
+    padding: 1%;
+}
+.b3ttom{
+background-color: yellow;
+font-size: calc(2vw + 4vh + 1vmin);
+padding: 1%;
+}
+.w1, .w2, .w3 {
+    height: 100%;
+}
+@media only screen and (min-width: 100px) and (max-width: 480px){
+.w2, .w3 {
+    display: none;
+}
+}
+@media only screen and (min-width: 481px) and (max-width: 1023px){
+.w1, .w3 {
+    display: none;
+}
+}
+@media only screen and (min-width: 1024px){
+.w1, .w2 {
+    display: none;
+}
+}

@@ -1,0 +1,145 @@
+* {
+    height: 98%;
+}
+
+body {
+    margin: 0 auto;
+    display: grid;
+}
+  
+.grid-container {
+display: grid;
+grid-template-areas:
+    "top top top top"
+    "side main main main"
+    "side main main main"
+    "none main main main";
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-gap: 2%;
+background-color: #2196F3;
+padding: 2%;
+height: 95%;
+}
+.green {
+background-color: green;
+grid-area: top;
+}
+.blue {
+    background-color: blue;
+    grid-area: side;
+    height: 100%;
+}
+.red {
+    background-color: red;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3%;
+    padding: 3%;
+    height: auto;
+    width: 94%;
+    grid-template-areas:
+    "ttl1 ttl2 ttl3"
+    "footer footer footer"
+    "footer footer footer";
+}
+
+.yellow{
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    margin: 0 auto;  
+}
+.one{
+    grid-area: tt1;
+}
+.two{
+    grid-area: ttl2;
+}
+.three{
+    grid-area: ttl3;
+}
+
+.purple {
+    height: 70%;
+    width: 100%;
+    background-color: purple;
+    margin: 0 auto;
+    grid-area: footer;
+}
+
+
+/* ViewPort Setting */
+
+@media only screen and (min-width: 100px) and (max-width: 480px){
+
+.blue, .three{
+    display: none;
+} 
+ 
+.grid-container {
+display: grid;
+grid-template-areas:
+    "top top"
+    "main main"
+    "main main"
+    "main main";
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-gap: 2%;
+background-color: #2196F3;
+padding: 2%;
+}
+.red {
+    background-color: red;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 3%;
+    padding: 3%;
+    height: auto;
+    width: 94%;
+    grid-template-areas:
+    "ttl1
+    "ttl2"
+    "ttl3"
+    "footer";
+} 
+}  
+/* 
+@media only screen and (min-width: 481px) and (max-width: 1023px){
+.blue {
+    display: none;
+}
+.grid-container {
+display: grid;
+grid-template:
+    "top top"
+    "main main"
+    "main main"
+    "main main";
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-gap: 2%;
+background-color: #2196F3;
+padding: 2%;
+}
+.red {
+    background-color: red;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 3%;
+    padding: 3%;
+    height: auto;
+    width: 94%;
+}
+}  
+
+@media only screen and (min-width: 1024px){
+
+} */
