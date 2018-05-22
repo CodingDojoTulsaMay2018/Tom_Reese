@@ -98,7 +98,7 @@ if(arr.length > 2){
     }   
    
     console.log(max);
-    console.log(sec);
+    console.log("make it another for loop, max AND min, you big dummy");
 }
 }
 

@@ -1,0 +1,13 @@
+* {
+    padding: 2%;
+}
+.grid {
+    height: auto;
+    width: 500px;
+
+}
+
+img {
+    height: 20%;
+    width: 20%;
+}
