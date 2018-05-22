@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery Functions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="example">
+            <div class="usecase">
+                <button type="button" class="btn btn-primary click">click</button>
+                <div class="explain">
+                    <h1>Click</h1>
+                    <span>Bind an event handler to the "click" JavaScript event, or trigger that event on an element</span>
+                </div>    
+            </div>
+            <div class="usecase">
+                    <button type="button" class="btn btn-primary hide">hide</button>
+                    <div class="explain">
+                        <h1>Hide</h1>
+                        <div id="hide-b">Hide the matched elements</div>
+                    </div>         
+            </div>
+            <div class="usecase">
+                    <button type="button" class="btn btn-primary show">show</button>
+                    <div class="explain">
+                        <h1>Show</h1>
+                        <span>Display the matched elements. In this case, it will show the hidden text in the "Hide" row.</span>
+                    </div>                   
+            </div>
+            <div class="usecase">
+                <button type="button" class="btn btn-primary toggle">toggle</button>
+                <div class="explain">
+                    <h1 class="toghead">Toggle</h1>
+                    <span>Display or hide the matched elements.</span>
+                </div>                
+            </div>
+            <div class="usecase">
+                    <button type="button" class="btn btn-primary slide-up">slide up</button>
+                    <div class="explain">
+                        <h1 id="slided">Slide Up</h1>
+                        <span>Hide the matched elements with a sliding motion.</span>
+                    </div>                    
+            </div>
+            <div class="usecase">
+                    <button type="button" class="btn btn-primary slide-down">slide down</button>
+                    <div class="explain">
+                        <h1>Slide Down</h1>
+                        <span>Display the matched elements with a sliding motion.</span>
+                    </div>                   
+            </div>
+            <div class="usecase">
+                    <button type="button" class="btn btn-primary slide-toggle">slide toggle</button>
+                    <div class="explain-slide-toggle-test">
+                        <h1>Slide Toggle</h1>
+                        <span>Display or hide the matched elements with a sliding motion.</span>
+                    </div>                    
+            </div>
+            <div class="usecase">
+                    <button type="button" class="btn btn-primary fade-out">fade out</button>
+                    <div class="explain fade-out-explained">
+                        <h1>Fade Out</h1>
+                        <span>Hide the matched elements by fading them to transparent.</span>
+                    </div>                    
+            </div>
+            <div class="usecase">
+                <button type="button" class="btn btn-primary fade-in">fade in</button>
+                <div class="explain">
+                    <h1>Fade In</h1>
+                    <span>Display the matched elements by fading them to opaque.</span>
+                </div>                
+            </div>
+            <div class="usecase">
+                    <button type="button" class="btn btn-primary add-class">add class</button>
+                    <div class="explain">
+                        <h1>Add Class</h1>
+                        <div class="tester">Adds the specified class(es) to each element in the set of matched elements</div>
+                    </div>                    
+            </div>
+            <div class="usecase">
+                    <button type="button" class="btn btn-primary before">before</button>
+                    <div class="explain">
+                        <h1>Before</h1>
+                        <div class="before-text">Insert content, specified by the parameter, before each element in the set of matched elements.</div>
+                    </div>                    
+            </div>
+            <div class="usecase">
+                    <button type="button" class="btn btn-primary after">after</button>
+                    <div class="explain">
+                        <h1>After</h1>
+                        <div class="after-text">Insert content, specified by the parameter, after each element in the set of matched elements.</div>
+                    </div>                    
+            </div>
+            <div class="usecase">
+                    <button type="button" class="btn btn-primary append">append</button>
+                    <div class="explain">
+                        <h1>Append</h1>
+                        <div class="append-test">Insert content, specified by the parameter, to the end of each element in the set of matched elements.  </div>
+                    </div>                    
+            </div>
+            <div class="usecase">
+                    <button type="button" class="btn btn-primary html">html</button>
+                    <div class="explain">
+                        <h1>HTML</h1>
+                        <span>Get the HTML contents of the first element<div class="breaking-internet"></div> in the set of matched elements or set the HTML contents of every matched element.</span>
+                    </div>                    
+            </div>
+            <div class="usecase">
+                    <button type="button" class="btn btn-primary attr">attr</button>
+                    <div class="explain">
+                        <h1>Attr</h1>
+                        <p><img src="https://cnet1.cbsistatic.com/img/p8fGGPm03zuDWu3SRy9_-WylGGo=/936x527/2013/11/22/9454e1d9-5bc1-11e3-b264-14feb5ca9861/_MG_9736.jpg" class="pagani" alt="Pagani Huayra picture" height="20%" width="20%"></p>
+                        <span>Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.</span>
+                    </div>                    
+            </div>
+            <div class="usecase">
+                    <button type="button" class="btn btn-primary val">val</button>
+                    <div class="explain">
+                        <h1>Val</h1>
+                        <input type="text" style="display:none;" class="input-area" value="test it out here!">
+                        <div class="user-input" ></div>
+                        <span>Get the current value of the first element in the set of matched elements or set the value of every matched element.</span>
+                    </div>                    
+            </div>
+            <div class="usecase">
+                    <button type="button" class="btn btn-primary text">text</button>
+                    <div class="explain">
+                        <h1>Text</h1>
+                        <div class="input-text-test">Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements. So, when you click the button, this will be our goodbye...you're playing for the end-game now.</div>
+                    </div>                    
+            </div>
+            <div class="usecase">
+                    <button type="button" class="btn btn-primary data">data</button>
+                    <div class="explain">
+                        <h1>Data</h1>
+                        <div class="button-show" style="display:none;">
+                            <p>Favorite Superhero?</p>
+                            <button class="heros">Superman</button>
+                            <button class="heros">Batman</button>
+                            <button class="heros">Wolverine</button>
+                            <button class="heros">Peter Quill</button>
+                            <p><span>Your favorite hero is&nbsp;<div class="answer big-blue"></div></span></p>
+                        </div>
+                        <span>Store arbitrary data associated with the matched elements or return the value at the named data store for the first element in the set of matched elements.</span>
+                    </div>                    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
