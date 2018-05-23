@@ -1,0 +1,11 @@
+body {
+    padding: 5px;
+    height: 500px;
+    width: 800px;
+}
+
+img {
+    height: 24%;
+    width: 24%;
+    object-fit: cover;
+}
