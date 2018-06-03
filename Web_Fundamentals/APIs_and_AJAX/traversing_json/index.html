@@ -7,13 +7,14 @@
         <script>
             $(document).ready(function(){
                 $.get("https://pokeapi.co/api/v2/pokemon/1/", function(res) {
-                    console.log(res);
-                }, "json");
+                $('#info').html("<h2>" + res.abilities[0].name + "</h2>");
+                }, 'json');
             })
         </script>
     </head>
     <body>
-        <div id="bulbasaur">
+        <h1>Bulbasaur</h1>
+        <div id="info">
         </div>
     </body>
 </html>
