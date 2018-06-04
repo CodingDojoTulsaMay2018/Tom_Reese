@@ -44,3 +44,25 @@ def flex(x,y,z):
             print(num)
 
 flex(0,100,5)
+
+
+# PREDICTIONS
+
+list = [3,5,1,2]
+for i in list:
+    print(i)
+
+# output = 3,5,1,2
+
+
+list = [3,5,1,2]
+for i in range(list):
+    print(i)
+    
+# output = type error
+
+list = [3,5,1,2]
+for i in range(len(list)):
+    print(i)
+
+# output = 0,1,2,3
