@@ -1,3 +1,5 @@
+#1
+
 x = [ [5,2,3], [10,8,9] ] 
 students = [
      {'first_name':  'Michael', 'last_name' : 'Jordan'},
@@ -30,37 +32,35 @@ z[0]['y'] = 30
 print(z)
 
 
-#1
-
-def dictlist(dict):
-  x=0
-  y=0
-  for key, val in dict[x].items():
-     print(key, " = ", val)
-     y+=1
-  for key, val in dict[y].items():
-     print(key, " = ", val, ",")
-     y+=1
-
-dictlist(students)
-
-def dictlist(dict):
-  x=0
-  y=0
-  for key, val in dict[x].items():
-      for key, val in dict[y].items():
-          print("My name is {} {} and I am years old.".format(dict[x], dict[y]))
-          # x+=1
-          # y+=1
-
-dictlist(students)
-
-
 #2
 
+def iter(dict):
+  a = ''
+  for i in dict:
+    x = []
+    for j in i:
+      x.append(j+" : "+i[j])
+    s=", ".join(x)
+    a+=s
+    a+="\n"
+  print(a)
+
+students = [
+  {'first_name':  'Michael', 'last_name' : 'Jordan'},
+  {'first_name' : 'John', 'last_name' : 'Rosales'},
+  {'first_name' : 'Mark', 'last_name' : 'Guillen'},
+  {'first_name' : 'KB', 'last_name' : 'Tonel'}
+]
+
+iter(students)
 
 #3
 
+def iter(key, dict):
+  for i in dict:
+      print(i[key])
+
+iter('first_name',students)
 
 #4
 
