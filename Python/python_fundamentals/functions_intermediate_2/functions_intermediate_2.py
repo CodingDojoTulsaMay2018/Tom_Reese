@@ -28,3 +28,49 @@ print(sports_directory)
 
 z[0]['y'] = 30
 print(z)
+
+
+#1
+
+def dictlist(dict):
+  x=0
+  y=0
+  for key, val in dict[x].items():
+     print(key, " = ", val)
+     y+=1
+  for key, val in dict[y].items():
+     print(key, " = ", val, ",")
+     y+=1
+
+dictlist(students)
+
+def dictlist(dict):
+  x=0
+  y=0
+  for key, val in dict[x].items():
+      for key, val in dict[y].items():
+          print("My name is {} {} and I am years old.".format(dict[x], dict[y]))
+          # x+=1
+          # y+=1
+
+dictlist(students)
+
+
+#2
+
+
+#3
+
+
+#4
+
+def DojoInfo(dojo):
+  for i in dojo:
+    print(len(dojo[i]),i.upper())
+    for x in dojo[i]:
+      print(x)
+    print("")
+
+DojoInfo(dojo)
+
+
