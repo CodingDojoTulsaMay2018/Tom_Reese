@@ -3,7 +3,14 @@ app = Flask(__name__)
 
 @app.route('/')
 def helloworld():
-    return render_template("index.html")
+    css1 = 8
+    row1 = "<div class=box1></div><div class=box2></div>"
+    row2 = "<div class=box2></div><div class=box1></div>"
+    setup1 = row1*4
+    setup2 = row2*4
+    board = setup1+setup2
+    return render_template("index.html",css1=css1)+board*4
+
 @app.route('/<num1>/<num2>')
 def customboard(num1,num2):
     multi1 = int(num1)
