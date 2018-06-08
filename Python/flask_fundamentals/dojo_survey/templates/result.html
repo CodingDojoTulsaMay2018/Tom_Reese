@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .container{
+            background: red;
+            margin-top: 10%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>RESULTS!!!</h1>
+         
+        <form>
+            <div class="form-group">
+                <label>Your Name: {{name}}</label>
+            </div>
+            <div class="form-group">
+                <label for="sel1">Location: {{location}}</label>
+            </div>
+            <div class="form-group">
+                <label for="sel1">Favorite Language: {{lang}}</label>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment (optional):{{comment}}
+            </div>
+            <a href="/" class="btn btn-default">Back</button>
+        </form>
+    </div>
+
+</body>
+</html>
