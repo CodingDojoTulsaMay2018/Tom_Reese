@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkerboard</title>
+    <style type="text/css">
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <table class="table-bordered">
+            <thead>
+                <tr>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Full Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                    {% for i in users: %}
+                        <tr>
+                        {% for val in i.values(): %} 
+                        <td>{{val}}</td>
+                        {% endfor %}
+                        <td>{{i['first_name']}} {{i['last_name']}}</td>
+                        </tr>
+                    {% endfor %}   
+            </tbody>
+        </table>
+    </body>
+</html>
