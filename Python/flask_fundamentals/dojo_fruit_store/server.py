@@ -31,17 +31,6 @@ def orders():
     return render_template('checkout.html',count=count,apple=session['apple'], blackberry=session['blackberry'], raspberry=session['raspberry'], strawberry=session['strawberry'], first_name=session['first_name'], last_name=session['last_name'], student_id=session['student_id'], time=time)
 
 
-
-# @app.route('/danger',methods=['POST'])
-# def danger():
-#     print("user went to danger, all user base are belong to us")
-#     session['name'] = request.form['name']
-#     session['location'] = request.form['dojo_location']
-#     session['fav_lang'] = request.form['fav_lang']
-#     session['comment'] = request.form['comment']
-    
-#     return redirect('/result')
-
 @app.route('/fruits')         
 def fruits():
     return render_template("fruits.html")
