@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Great Number Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .container{
+            width: 800px;
+            height: auto;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+        .correct{
+            height: 300px;
+            width: 450px;
+            background-color: green;
+        }
+        .title{
+            display: flex;
+            font-size: 3em;
+        }
+        .subtitle{
+            display: block;
+            font-size: 2em;
+            text-align: center
+        }
+        button, input, select, textarea {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            position: relative;
+            display: flex;
+            left: 160px;
+        }
+
+        textarea .textarea{
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            position: relative;
+            display: flex;
+            left: 160px;
+        }
+        form {
+            position: relative;
+        }
+        p {
+            margin: 0 0 10px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            Welcome to the Great Number Game!!!
+        </div> 
+        <div class="subtitle">
+               I am thinking of a number between 1 and 100      
+                <p>Take a guess!</p> 
+        </div>
+
+        <div class="badresult">
+               
+        </div>
+
+        
+       
+        <form action="/guess" type="hidden" method="post" name="form">
+            <input style={{test}} class="correct" name="guess2"> {{result}}
+            <textarea  class="textarea" name="guess" rows="1" placeholder="example: 50"></textarea>
+            <button class="submitbutton" type="submit">I feel lucky!</button>
+        </form>
+        {{reset}}
+    </div>
+
+  
+</body>
+</html>
