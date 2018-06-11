@@ -18,6 +18,28 @@
             width: 450px;
             background-color: green;
         }
+
+        .nailedit{
+            height: 250px;
+            width: 250px;
+            background-color: green;
+            position: relative;
+            left: 110px;
+            color: white;
+        }
+        .toohigh{
+            height: 250px;
+            width: 250px;
+            background-color: red;
+            position: relative;
+            left: 110px;        }
+        .toolow {
+            height: 250px;
+            width: 250px;
+            background-color: red;
+            position: relative;
+            left: 110px;
+        }
         .title{
             display: flex;
             font-size: 3em;
@@ -26,6 +48,17 @@
             display: block;
             font-size: 2em;
             text-align: center
+        }
+        .resetbutton{
+            position: relative;
+            top: 230px;
+            left: 30px;
+            z-index: 1;
+        }
+
+        .result {
+            position: relative;
+            left: 150px;
         }
         button, input, select, textarea {
             font-family: inherit;
@@ -62,21 +95,15 @@
                I am thinking of a number between 1 and 100      
                 <p>Take a guess!</p> 
         </div>
-
-        <div class="badresult">
-               
+        <div class="result">    
+            <form class="resetbutton" action="/reset" method="post">
+                <button style="{{hide}}" class="submitbutton" type="submit">Play Again!</button>
+            </form>       
+            <form action="/guess" type="hidden" method="post" name="form">
+                <h3 class={{style}}>{{result}}</h3>
+                <textarea  style="{{display}}" class="textarea" name="guess" rows="1" placeholder="example: 50"></textarea>    
+                <button style="{{display}}" class="submitbutton" type="submit">I feel lucky!</button>
+            </form>
         </div>
-
-        
-       
-        <form action="/guess" type="hidden" method="post" name="form">
-            <input style={{test}} class="correct" name="guess2"> {{result}}
-            <textarea  class="textarea" name="guess" rows="1" placeholder="example: 50"></textarea>
-            <button class="submitbutton" type="submit">I feel lucky!</button>
-        </form>
-        {{reset}}
-    </div>
-
-  
 </body>
 </html>
