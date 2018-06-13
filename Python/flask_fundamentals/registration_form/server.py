@@ -21,7 +21,7 @@ def results():
 def process():
     count = 0
     if len(request.form['first_name']) < 1:
-        flash("Last name cannot be blank!")
+        flash("First name cannot be blank!")
         count+=1
     if len(request.form['last_name']) < 1:
         flash("Last name cannot be blank!")

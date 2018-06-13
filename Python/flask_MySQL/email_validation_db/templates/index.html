@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email Validation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .container{
+            background: red;
+            margin-top: 10%;
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        .flash_message{
+            background-color: red;
+            position: relative;
+            top: 100px;
+            overflow: auto;
+            font-size: 2em;
+            left: 250px;
+            max-width: 500px;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="flash_message" style="color:{{color}};" rows="5">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p>{{message}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+            
+    <div class="container">
+        <form action="/email" method="post">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" name="email"class="form-control">
+            </div>
+            <button type="submit" class="btn btn-default">Create User</button>
+          </form>
+    </div>
+
+</body>
+</html>
