@@ -1,0 +1,30 @@
+
+.submission {
+    padding: 10px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.container{
+    margin-top: 10%;
+}
+
+.top_box {
+    overflow: auto;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid black;
+    position: aboslute;
+    top: 30px;
+    left: 50px;
+    background-color: green;
+}
+
+.success_page {
+    margin-top: 30px;
+    background: lightgray;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}

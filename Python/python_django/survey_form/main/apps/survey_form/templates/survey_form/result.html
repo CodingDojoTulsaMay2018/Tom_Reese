@@ -1,0 +1,41 @@
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dojo Survey</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'survey_form/css/style.css' %}">
+
+</head>
+<body>
+    <div class="container">
+        
+        <div class="top_box">
+            <h3>Thanks for submitting this form!  You have submitted this form {{count}} times now.</h3>
+        </div>
+        
+        
+         
+        <form class="success_page">
+            <h1>Submission has been successful.</h1>
+            {% csrf_token %}
+            <div class="form-group">
+                <label>Your Name: {{name}}</label>
+            </div>
+            <div class="form-group">
+                <label for="sel1">Location: {{location}}</label>
+            </div>
+            <div class="form-group">
+                <label for="sel1">Favorite Language: {{lang}}</label>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment (optional):{{comment}}
+            </div>
+            <a href="/" class="btn btn-default">Back</button>
+        </form>
+    </div>
+
+</body>
+</html>
