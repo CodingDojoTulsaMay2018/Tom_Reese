@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Num</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'random_num/css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h4>Random Word Attempt {{count}}</h4>
+        <div class="results">
+            <form action="/" method='post'>
+                {% csrf_token %}
+                <h1 class="random_word">{{word}}</h1>
+                <a href="/">Energize!</button>
+              </form>
+               
+        </div>
+    </div>
+</body>
+</html>
