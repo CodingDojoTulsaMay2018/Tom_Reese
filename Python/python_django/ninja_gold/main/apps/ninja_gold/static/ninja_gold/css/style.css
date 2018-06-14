@@ -1,0 +1,87 @@
+
+    body {
+        width: fit-content;
+        height: fit-content;
+    }
+    .container {
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
+    .row {
+        height: fit-content;
+        /* background-color: green; */
+        /* border: 1px solid black; */
+        width: 900px;
+    }
+    textarea.usergold {
+        position: absolute;
+        left: 105px;
+        bottom: 0px;
+    }
+    .top {
+        /* border: 1px solid black; */
+        margin-top: 15px;
+        margin-left: 10px;
+        position: relative;
+        height: 30px;
+        max-width: 35%;
+        /* background-color: tan; */
+    }
+
+    .middle {
+        background-color: red;
+        display: inline-flex;
+        padding: 10px;
+    }
+
+    .box {
+        border: 1px solid black;
+        margin: 10px;
+        position: relative;
+        height: 175px;
+        max-width: 22.7%;
+    }
+    .farm {
+        background-color: purple;
+    }
+
+    .cave {
+        background-color: brown;
+    }
+
+    .house {
+        background-color: grey;
+    }
+
+    .casino {
+        background-color: gold;
+    }
+    
+    .btn-outline-warning,.btn-outline-secondary {
+        position: relative;
+        top: 70px;
+        left: 35px;
+    }
+
+    .bottom {
+        border: 1px solid black;
+        margin: 10px;
+        position: relative;
+        height: 190px;
+        max-width: 97.5%;
+        overflow: auto;
+        /* background-color: blue; */
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color:red;
+    }
+
+    .purple {
+        color: purple;
+    }
