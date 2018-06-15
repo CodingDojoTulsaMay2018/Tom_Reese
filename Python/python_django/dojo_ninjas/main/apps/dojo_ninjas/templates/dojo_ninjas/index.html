@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ninja List</h1>
+<ul>
+  {% for i in Ninjas %}
+    <li>{{i.name}}
+      <ul>
+        {% for j in i.ninjas.all %}
+        <li><em>{{j.first_name}} {{j.last_name}} {{j.desc}}</em></li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>
+</body>
+</html>
