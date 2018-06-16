@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=C:\Users\WhiteyBear\desktop\bootcamp\tom_reese\python\myenvironments\djangopy3env"
+set "VIRTUAL_ENV=C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\Python\myEnvironments\djangopy3env"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

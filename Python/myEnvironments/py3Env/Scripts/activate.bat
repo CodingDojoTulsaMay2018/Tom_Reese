@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\Python\myEnvironments\py3Env"
+set "VIRTUAL_ENV=C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\Python\myEnvironments\py3env"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"
@@ -9,7 +9,7 @@ if defined _OLD_VIRTUAL_PROMPT (
     )
     set "_OLD_VIRTUAL_PROMPT=%PROMPT%"
 )
-set "PROMPT=(py3Env) %PROMPT%"
+set "PROMPT=(py3env) %PROMPT%"
 
 REM Don't use () to avoid problems with them in %PATH%
 if defined _OLD_VIRTUAL_PYTHONHOME goto ENDIFVHOME
