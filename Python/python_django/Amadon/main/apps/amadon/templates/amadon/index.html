@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <title>Tom's Awesome Cigars</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'ninja_gold/css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Get your smoke on, with your drink on!</h1>
+
+        <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Cigar Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                {% csrf_token %}
+                {% for i in Cigars %}
+                    <th scope="row">{{i.name}}</th>
+                    <td>${{i.price}}</td>
+                    <td>{{i.created_at}}</td>
+                    <td><form action='/process' method='post'>
+                        {% csrf_token %}
+                        <div class="input-group mb-1">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01" name="quantity" placeholder="1" value="1">
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <input type='hidden' name='id' value='{{i.id}}'/>
+                        <button class="btn btn-success" type='submit'>Buy!</button>
+                      </form>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </form>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</body>
+</html>
