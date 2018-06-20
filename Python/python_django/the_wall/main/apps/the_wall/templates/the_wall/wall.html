@@ -1,0 +1,83 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>5* Cigar Reviews</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'the_wall/css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+            <nav class="navbar navbar-light bg-light justify-content-between">
+                    <a class="navbar-brand">Welcome {{first_name}}</a>
+                    <form class="form-inline">
+                        <a href="/logout" class="btn btn-outline-warning" value="Logout"/>Logout</a>
+                    </form>
+                  </nav>
+        <div class="row align-items-start">
+            <div class="col">
+                <form action="/post" method="post">
+                    {% csrf_token %}
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text">Post your review!</span>
+                        </div>
+                        <textarea rows="4" cols="100" class="form-control" aria-label="With textarea" name="review"></textarea>
+                    </div>
+                    <input type="hidden" name="log_type" value="{{id}}">
+                    <input type="submit"class="btn btn-outline-primary" value="Submit"/>
+                </form>
+            </div>
+        </div>
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                    <h1 style="color:red;"><li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li></h1>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        <div class="row align-items-center">
+            <div class="row">
+                <h1>Current Reviews</h1>
+                <div class="bottom col-12 overflow">
+                    <div class="form-group">
+                        {% for chicken in review reversed%}
+                        <h5>{{chicken.user.first_name}} {{chicken.user.last_name}} - {{chicken.created_at}}</h5>
+                            <p>{{chicken.message}}  
+                                <form action="/comment" method="post">
+                                {% csrf_token %}
+                                    <input type="hidden" name="review_id" value="{{chicken.id}}">
+                                    <textarea rows="2" cols="20" class="form-control" aria-label="With textarea" name="commentbox"></textarea>
+                                    <button type="submit"class="btn btn-outline-success pull-right" value="Comment"/>Comment</button>    
+                                </form>
+                                <p>{% for comment in comment %}</p>
+                                    {% if chicken.id == comment.review_id %}
+                                        <ul><h5>{{comment.user.first_name}} {{comment.user.last_name}} - {{comment.created_at}}</h5>
+                                        <p>{{comment.message}}</p></ul>
+                                    {% endif %}
+                                {% endfor %}        
+                        {% endfor %}
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="row align-items-end">
+            <div class="col">
+            One of three columns
+            </div>
+            <div class="col">
+            One of three columns
+            </div>
+            <div class="col">
+            One of three columns
+            </div>
+        </div>
+    </div>
+</body>
+</html>
