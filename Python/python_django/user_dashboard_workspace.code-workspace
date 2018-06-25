@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "user_dashboard"
+		},
+		{
+			"path": "the_wall"
+		},
+		{
+			"path": "semi_users"
+		},
+		{
+			"path": "courses"
+		},
+		{
+			"path": "login_registration"
+		},
+		{
+			"path": "Amadon"
+		}
+	],
+	"settings": {}
+}

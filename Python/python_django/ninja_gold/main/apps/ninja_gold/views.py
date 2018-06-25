@@ -24,7 +24,7 @@ def process(request):
     print("ninja is processing gold")
     activity = request.session['activity']
     
-    time = (f"..."+strftime("%Y-%m-%d %H:%M %p", gmtime()))
+    time = (f"...",strftime("%Y-%m-%d %H:%M %p", gmtime()))
 
     print(request.POST['action'])
 
