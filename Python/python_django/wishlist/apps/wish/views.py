@@ -9,7 +9,7 @@ def index(request):
     return render(request, 'wish/index.html')
 
 def register(request):
-    errors = User.objects.validator(request.POST)
+    errors = User.objects.create_validator(request.POST)
     if len(errors):
         for key, value in errors.items():
             messages.error(request, value)
@@ -47,18 +47,16 @@ def dashboard(request):
     id = request.session['user_id']
     this_user = User.objects.get(id=id)
     actions = []
-    for i in this_user.has_wish.all():
-        if this_user.id == i.id:
-            continue
+    for i in this_user.has_wishes.all():
         if this_user.id == i.dreamer.id:
             action = "Delete"
-            actions.append([action, i.id,i.wish, i.dreamer.name, i.created_at])
+            actions.append([action, i.dreamer.id,i.wish, i.dreamer.name, i.created_at])
         else:
             action = "Remove"
             actions.append([action, i.id,i.wish, i.dreamer.name, i.created_at])
 
     others = []
-    for i in Wish.objects.exclude(dreamer__id=this_user.id):
+    for i in Wish.objects.exclude(dreamer__id=this_user.id).exclude(has_dreamers__id=this_user.id):
         action = "Add"
         others.append([action, i.id,i.wish, i.dreamer.name, i.created_at])
 
@@ -77,8 +75,8 @@ def add(request):
     id = request.session['user_id']
     user = User.objects.get(id=id)
     this_wish = Wish.objects.get(id=request.POST['wishid'])
-    this_wish.has_dreamers.add(user)
-    user.has_wish.add(this_wish)
+    user.has_wishes.add(this_wish)
+    # this_wish.has_dreamers.add(user)
     return redirect('/dashboard')
 
 def remove(request):
@@ -88,7 +86,7 @@ def remove(request):
         user = User.objects.get(id=id)
         Wish.objects.get(id=wishid).delete()
     if request.POST['methods'] == "Remove":
-        wishid = request.POST['wishid']
+        wishid = int(request.POST['wishid'])
         this_wish=Wish.objects.get(id=wishid)
         id = request.session['user_id']
         this_user = User.objects.get(id=id)
@@ -97,26 +95,19 @@ def remove(request):
     return redirect('/dashboard')
 
 def create(request):
-    # errors = User.objects.validator(request.POST)
-
-    # add = request.POST['add']
     id = request.session['user_id']
     user = User.objects.get(id=id)
-    # Wish.objects.create(wish = add, dreamer=user)
     return render(request, 'wish/wish_create.html')
 
 
 def addwish(request):
-    errors = Wish.objects.process_wish(request.POST)
+    user_id = request.session['user_id']
+    errors = Wish.objects.process_wish(request.POST,user_id)
     if len(errors):
         for key, value in errors.items():
             messages.error(request, value)
         return redirect('/wish_items/create')
     else:
-        id = request.session['user_id']
-        this_user = User.objects.get(id=id)
-        this_wish = Wish.objects.create(wish=request.POST['wish'])
-        this_user.has_wishes.add(this_wish)
         print("wish created successfully")
     return redirect("/dashboard")
 
@@ -125,7 +116,7 @@ def items(request, id):
         messages.error(request, "Must be logged in to view this page!")
         return redirect('/')
     user = User.objects.get(id=request.session['user_id'])
-    this_wish = Wish.objects.get(id=id)
+    this_wish = Wish.objects.filter(id=id)
     
     items = []
     for i in this_wish.has_dreamers.all():

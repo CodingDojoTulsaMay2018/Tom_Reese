@@ -11,16 +11,6 @@
     <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="//cdn.bootcss.com/moment.js/2.17.1/moment.min.js"></script>
     <script src="//cdn.bootcss.com/bootstrap-datetimepicker/4.17.44/js/bootstrap-datetimepicker.min.js"></script>
-
-<!-- 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip(); 
-        });
-    </script> -->
     {% load static %}
     <link rel="stylesheet" href="{% static 'wish/css/style.css' %}">
 </head>
@@ -59,15 +49,18 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Username</label>
-                    <input type="text" name="username" class="form-control" placeholder="Username must be alpha with no spaces">
+                    <input type="text" name="username" class="form-control" placeholder="Username must between 8 and 32 characters, and can only include letters and numbers">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Password</label>
-                    <input type="password" name="password" class="form-control" placeholder="Must be at least 8 characters, no more than 20 characters">
+                    <input type="password" name="password" class="form-control" placeholder="8 to 32 characters. May include combos of letters, and the following: numbers (0-9), and the following split characters: #!*@$%^&.()\-_">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Password Confirm</label>
                     <input type="password" name="confirm" class="form-control" placeholder="Confirm Password">
+                </div>
+                <div class="form-group">
+                    Hire Date: <input type="date" name="hire">
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Register</button>
