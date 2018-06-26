@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>AJAX Posts</title>
+</head>
+<body>
+        <script>
+                $( document ).ready(function(){
+                    $.ajax({
+                        url: 'all.html',
+                        success: function(serverResponse){
+                            console.log('success. serverResponse:', serverResponse)
+                            $('#placeholder1').html((serverResponse))
+                        }
+                    })
+
+
+                    $('#notes').submit(function(e){
+                        e.preventDefault()
+                        $.ajax({
+                            url: $(this).attr('action'),
+                            method: 'post',
+                            data: $(this).serialize(),
+                            success: function(serverResponse){
+                                console.log(serverResponse)
+                                $('#placeholder1').html(serverResponse)
+                            }  
+                        });
+                    });
+                })
+            </script>
+    
+    <h1>My Posts</h1>
+
+    <form action="/create" id="notes" method="post">
+    {% csrf_token %}
+    <textarea name="text" cols="30" rows="10" placeholder="enter your note here!"></textarea>
+    <button type="submit" class="btn btn-success" >Add Post!</button>
+    </form>
+
+    <div id="placeholder1" style="margin-top:50px; padding: 10px; width:700px; overflow: auto">Placeholder for AJAX content</div>  
+    
+  
+
+</body>
+</html>
