@@ -1,0 +1,163 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Leads AJAX Example</title>
+</head>
+<body>
+    <div class="container">
+            <div class="form-group">
+                <form action="/find" method="post">
+                    {% csrf_token %}                    
+                    Name: <input type="text" name="first_name_starts_with" id="ajax_first_name"/>
+                </form>
+                <form action="/find" method="post">
+                    {% csrf_token %}                    
+                    From Date <input type="date" name="from_date" id="ajax_from_date"/>
+                </form>
+                <form action="/find" method="post">
+                    {% csrf_token %}                    
+                    To Date: <input type="" name="date" id="ajax_to_date"/>
+                </form>
+
+                <!-- From: <input type="date" name="from">
+                Date: <input type="date" name="date"> -->
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    </li>
+                </ul>
+                </nav>
+            <script>
+                    $( document ).ready(function(){
+                        $.ajax({
+                            url: 'all.html',
+                            success: function(serverResponse){
+                                $('#placeholder1').html((serverResponse))
+                            }
+                        })
+                    
+                        $("#ajax_to_date").datepicker({
+                            onSelect: function(date, instance) {
+                                $.ajax({
+                                    url: "/find",
+                                    method: "Post",
+                                    data: $(this).parent().serialize(),
+                                    success: function(serverResponse)
+                                    {
+                                        $('#placeholder1').html(serverResponse)
+                                    }
+                                });  
+                            }
+                            });
+
+                    $('#ajax_first_name').keyup(function(){
+                        // console.log("came here")
+                        // console.log("serialize response is:",$(this).parent().serialize())
+                    $.ajax({
+                        url: '/find',
+                        method: 'post',
+                        data: $(this).parent().serialize(),
+                        success: function(serverResponse){
+                            // console.log(serverResponse)
+                            $('#placeholder1').html(serverResponse)
+                        }
+                    })
+                    })
+                })
+            </script>
+        <div id="placeholder1" style="margin-top:50px; padding: 10px; width:700px; overflow: auto">Placeholder for AJAX content</div>  
+    </div>
+</body>
+</html>
+
+<!-- 
+
+<script>
+
+        $('#button_html').click(function(){
+            console.log("button html is clicked")
+            $.ajax({
+                url: 'all.html',
+                success: function(serverResponse){
+                    console.log('success. serverResponse:', serverResponse)
+                    $('#placeholder1').html(serverResponse)
+                }
+            })
+        });
+    </script>
+
+
+    <h1>Demo 2 - AJAX form</h1>
+   
+    <form action="/find" method="post">
+        {% csrf_token %}
+        Find all users whose first name starts with 
+        
+        <input type="text" name="first_name_starts_with" id="ajax_first_name"/>
+    </form>
+
+    <script>
+        $('#ajax_first_name').keyup(function(){
+            console.log("came here")
+            console.log("serialize response is:",$(this).parent().serialize())
+
+            $.ajax({
+                url: '/find',
+                method: 'post',
+                data: $(this).parent().serialize(),
+                success: function(serverResponse){
+                    console.log(serverResponse)
+                    $('#placeholder2').html(serverResponse)
+                }
+            })
+        });
+
+
+    </script>
+
+    <div class="ajax_content" id="placeholder2" style="margin-top:50px; border: 1px solid black; padding: 10px; width:700px;">Placeholder for AJAX content</div>
+
+    <h1>Demo 3 - AJAX form II</h1>
+   
+    <form action="/create" class="ajax_form" id="ajax_create" method="post">
+        {% csrf_token %}
+        First Name:<input type="text" name="first_name"/>
+        Last Name:<input type="text" name="last_name"/>
+        Age:<input type="text" name="age"/>
+        Email:<input type="text" name="email"/>
+        <input type="submit" class="btn btn-warning" value="Submit">
+    </form>
+
+    <script>
+        $('#ajax_create').submit(function(e){
+            e.preventDefault()
+            $.ajax({
+                url: $(this).attr('action'),
+                method: 'post',
+                data: $(this).serialize(),
+                success: function(serverResponse){
+                    console.log(serverResponse)
+                    $('#placeholder3').html(serverResponse)
+                }  
+            })
+        })
+    </script> -->
