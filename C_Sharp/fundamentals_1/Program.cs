@@ -46,25 +46,51 @@ namespace fundamentals_1
 //                 t++;
 //             }
 
-            string buzz = "Buzz";
+//             string buzz = "Buzz";
+// string fizz = "Fizz";
+
+//     for(int t = 1;t < 101; t++) {
+//         int f = t / 3;
+//         int b = t / 5;
+//         if((f*3)-t == 0 && (b*5)-t == 0){
+//             Console.WriteLine(fizz+buzz);
+//             continue;
+//         }
+//         if(f*3-t == 0){
+//             Console.WriteLine(fizz);
+//             continue;
+//         }
+//         if((b*5)-t == 0){
+//             Console.WriteLine(buzz);
+//             continue;
+//                 } 
+//                 Console.WriteLine(t);
+//             }
+
+string buzz = "Buzz";
 string fizz = "Fizz";
 
+
+
     for(int t = 1;t < 101; t++) {
-        int f = t / 3;
-        int b = t / 5;
-        if((f*3)-t == 0 && (b*5)-t == 0){
+        Random rand = new Random();
+int r3 = rand.Next(1,100);
+int r5 = rand.Next(1,100);
+        int f = r3 / 3;
+        int b = r5 / 5;
+        if((f*3)-r3 == 0 && (b*5)-r5 == 0){
             Console.WriteLine(fizz+buzz);
             continue;
         }
-        if(f*3-t == 0){
+        if(f*3-r3 == 0){
             Console.WriteLine(fizz);
             continue;
         }
-        if((b*5)-t == 0){
+        if((b*5)-r5 == 0){
             Console.WriteLine(buzz);
             continue;
                 } 
-                Console.WriteLine(t);
+                Console.WriteLine(r3+r5);
             }
         }
         }  
