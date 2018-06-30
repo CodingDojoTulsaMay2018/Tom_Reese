@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\hello_net\bin\Debug\netcoreapp2.0\hello_net.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\hello_net\bin\Debug\netcoreapp2.0\hello_net.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\hello_net\bin\Debug\netcoreapp2.0\hello_net.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\hello_net\bin\Debug\netcoreapp2.0\hello_net.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\hello_net\bin\Debug\netcoreapp2.0\hello_net.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\hello_net\obj\Debug\netcoreapp2.0\hello_net.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\hello_net\obj\Debug\netcoreapp2.0\hello_net.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\hello_net\obj\Debug\netcoreapp2.0\hello_net.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\hello_net\obj\Debug\netcoreapp2.0\hello_net.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\hello_net\obj\Debug\netcoreapp2.0\hello_net.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\hello_net\obj\Debug\netcoreapp2.0\hello_net.pdb
