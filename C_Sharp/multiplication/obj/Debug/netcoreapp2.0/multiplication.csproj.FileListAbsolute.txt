@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\multiplication\bin\Debug\netcoreapp2.0\multiplication.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\multiplication\bin\Debug\netcoreapp2.0\multiplication.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\multiplication\bin\Debug\netcoreapp2.0\multiplication.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\multiplication\bin\Debug\netcoreapp2.0\multiplication.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\multiplication\bin\Debug\netcoreapp2.0\multiplication.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\multiplication\obj\Debug\netcoreapp2.0\multiplication.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\multiplication\obj\Debug\netcoreapp2.0\multiplication.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\multiplication\obj\Debug\netcoreapp2.0\multiplication.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\multiplication\obj\Debug\netcoreapp2.0\multiplication.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\multiplication\obj\Debug\netcoreapp2.0\multiplication.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\multiplication\obj\Debug\netcoreapp2.0\multiplication.pdb
