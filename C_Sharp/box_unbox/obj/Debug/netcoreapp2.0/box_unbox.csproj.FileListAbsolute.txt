@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\box_unbox\bin\Debug\netcoreapp2.0\box_unbox.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\box_unbox\bin\Debug\netcoreapp2.0\box_unbox.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\box_unbox\bin\Debug\netcoreapp2.0\box_unbox.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\box_unbox\bin\Debug\netcoreapp2.0\box_unbox.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\box_unbox\bin\Debug\netcoreapp2.0\box_unbox.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\box_unbox\obj\Debug\netcoreapp2.0\box_unbox.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\box_unbox\obj\Debug\netcoreapp2.0\box_unbox.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\box_unbox\obj\Debug\netcoreapp2.0\box_unbox.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\box_unbox\obj\Debug\netcoreapp2.0\box_unbox.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\box_unbox\obj\Debug\netcoreapp2.0\box_unbox.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\box_unbox\obj\Debug\netcoreapp2.0\box_unbox.pdb

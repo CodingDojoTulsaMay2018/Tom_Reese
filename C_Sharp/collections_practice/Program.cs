@@ -59,10 +59,10 @@ name.Add("Frank",null);
 name.Add("Troy",null);
 
 Random rand = new Random();
-name["Tom"] = flavors[rand.Next(0,5)];
-name["Ryan"] = flavors[rand.Next(0,5)];
-name["Troy"] = flavors[rand.Next(0,5)];
-name["Frank"] = flavors[rand.Next(0,5)];
+name["Tom"] = flavors[rand.Next(0,6)];
+name["Ryan"] = flavors[rand.Next(0,6)];
+name["Troy"] = flavors[rand.Next(0,6)];
+name["Frank"] = flavors[rand.Next(0,6)];
 
 //The var keyword takes the place of a type in type-inference
 foreach (var entry in name)

@@ -74,8 +74,8 @@ string fizz = "Fizz";
 
     for(int t = 1;t < 101; t++) {
         Random rand = new Random();
-int r3 = rand.Next(1,100);
-int r5 = rand.Next(1,100);
+int r3 = rand.Next(1,101);
+int r5 = rand.Next(1,101);
         int f = r3 / 3;
         int b = r5 / 5;
         if((f*3)-r3 == 0 && (b*5)-r5 == 0){
