@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\testapp\bin\Debug\netcoreapp2.0\testapp.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\testapp\bin\Debug\netcoreapp2.0\testapp.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\testapp\bin\Debug\netcoreapp2.0\testapp.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\testapp\bin\Debug\netcoreapp2.0\testapp.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\testapp\bin\Debug\netcoreapp2.0\testapp.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\testapp\obj\Debug\netcoreapp2.0\testapp.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\testapp\obj\Debug\netcoreapp2.0\testapp.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\testapp\obj\Debug\netcoreapp2.0\testapp.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\testapp\obj\Debug\netcoreapp2.0\testapp.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\testapp\obj\Debug\netcoreapp2.0\testapp.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\testapp\obj\Debug\netcoreapp2.0\testapp.pdb
