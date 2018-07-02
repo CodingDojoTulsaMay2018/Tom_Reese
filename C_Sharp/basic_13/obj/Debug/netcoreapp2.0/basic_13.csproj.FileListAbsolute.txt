@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\basic_13\bin\Debug\netcoreapp2.0\basic_13.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\basic_13\bin\Debug\netcoreapp2.0\basic_13.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\basic_13\bin\Debug\netcoreapp2.0\basic_13.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\basic_13\bin\Debug\netcoreapp2.0\basic_13.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\basic_13\bin\Debug\netcoreapp2.0\basic_13.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\basic_13\obj\Debug\netcoreapp2.0\basic_13.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\basic_13\obj\Debug\netcoreapp2.0\basic_13.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\basic_13\obj\Debug\netcoreapp2.0\basic_13.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\basic_13\obj\Debug\netcoreapp2.0\basic_13.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\basic_13\obj\Debug\netcoreapp2.0\basic_13.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\basic_13\obj\Debug\netcoreapp2.0\basic_13.pdb
