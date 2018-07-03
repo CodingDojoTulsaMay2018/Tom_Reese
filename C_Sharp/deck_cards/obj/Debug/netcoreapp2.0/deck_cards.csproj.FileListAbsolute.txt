@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\deck_cards\bin\Debug\netcoreapp2.0\deck_cards.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\deck_cards\bin\Debug\netcoreapp2.0\deck_cards.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\deck_cards\bin\Debug\netcoreapp2.0\deck_cards.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\deck_cards\bin\Debug\netcoreapp2.0\deck_cards.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\deck_cards\bin\Debug\netcoreapp2.0\deck_cards.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\deck_cards\obj\Debug\netcoreapp2.0\deck_cards.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\deck_cards\obj\Debug\netcoreapp2.0\deck_cards.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\deck_cards\obj\Debug\netcoreapp2.0\deck_cards.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\deck_cards\obj\Debug\netcoreapp2.0\deck_cards.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\deck_cards\obj\Debug\netcoreapp2.0\deck_cards.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\deck_cards\obj\Debug\netcoreapp2.0\deck_cards.pdb
