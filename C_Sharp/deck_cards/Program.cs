@@ -34,15 +34,15 @@ namespace deck_cards
         player1.Discard(5);
         player1.Discard(1);
 
-        // deck.topmost();
-        //  foreach(var i in deck.cards){
-        //     System.Console.WriteLine(i.StringVal+" of "+i.Suit);
-        // }
+        deck.topmost();
+         foreach(var i in deck.cards){
+            System.Console.WriteLine(i.StringVal+" of "+i.Suit);
+        }
 
-        // deck.reset();
-        //          foreach(var i in deck.cards){
-        //     System.Console.WriteLine(i.StringVal+" of "+i.Suit);
-        // }
+        deck.reset();
+                 foreach(var i in deck.cards){
+            System.Console.WriteLine(i.StringVal+" of "+i.Suit);
+        }
 
 
         }
