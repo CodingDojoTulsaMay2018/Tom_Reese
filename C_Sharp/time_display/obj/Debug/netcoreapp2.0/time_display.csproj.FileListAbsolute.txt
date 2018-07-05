@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\time_display\bin\Debug\netcoreapp2.0\time_display.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\time_display\bin\Debug\netcoreapp2.0\time_display.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\time_display\bin\Debug\netcoreapp2.0\time_display.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\time_display\bin\Debug\netcoreapp2.0\time_display.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\time_display\bin\Debug\netcoreapp2.0\time_display.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\time_display\obj\Debug\netcoreapp2.0\time_display.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\time_display\obj\Debug\netcoreapp2.0\time_display.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\time_display\obj\Debug\netcoreapp2.0\time_display.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\time_display\obj\Debug\netcoreapp2.0\time_display.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\time_display\obj\Debug\netcoreapp2.0\time_display.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\time_display\obj\Debug\netcoreapp2.0\time_display.pdb
