@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\doubly_linked\bin\Debug\netcoreapp2.0\doubly_linked.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\doubly_linked\bin\Debug\netcoreapp2.0\doubly_linked.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\doubly_linked\bin\Debug\netcoreapp2.0\doubly_linked.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\doubly_linked\bin\Debug\netcoreapp2.0\doubly_linked.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\doubly_linked\bin\Debug\netcoreapp2.0\doubly_linked.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\doubly_linked\obj\Debug\netcoreapp2.0\doubly_linked.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\doubly_linked\obj\Debug\netcoreapp2.0\doubly_linked.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\doubly_linked\obj\Debug\netcoreapp2.0\doubly_linked.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\doubly_linked\obj\Debug\netcoreapp2.0\doubly_linked.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\doubly_linked\obj\Debug\netcoreapp2.0\doubly_linked.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\doubly_linked\obj\Debug\netcoreapp2.0\doubly_linked.pdb
