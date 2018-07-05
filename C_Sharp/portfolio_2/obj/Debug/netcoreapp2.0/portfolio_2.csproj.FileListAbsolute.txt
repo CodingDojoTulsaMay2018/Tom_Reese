@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\portfolio_2\bin\Debug\netcoreapp2.0\portfolio_2.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\portfolio_2\bin\Debug\netcoreapp2.0\portfolio_2.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\portfolio_2\bin\Debug\netcoreapp2.0\portfolio_2.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\portfolio_2\bin\Debug\netcoreapp2.0\portfolio_2.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\portfolio_2\bin\Debug\netcoreapp2.0\portfolio_2.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\portfolio_2\obj\Debug\netcoreapp2.0\portfolio_2.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\portfolio_2\obj\Debug\netcoreapp2.0\portfolio_2.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\portfolio_2\obj\Debug\netcoreapp2.0\portfolio_2.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\portfolio_2\obj\Debug\netcoreapp2.0\portfolio_2.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\portfolio_2\obj\Debug\netcoreapp2.0\portfolio_2.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\portfolio_2\obj\Debug\netcoreapp2.0\portfolio_2.pdb

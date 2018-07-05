@@ -1,0 +1,37 @@
+.picture {
+    /* background-color: blue; */
+    width: 45%;
+    height: 90%;
+    display: inline-block;
+}
+
+.about {
+    /* background-color: red; */
+    width: 45%;
+    height: 90%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container {
+    height: 700px;
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+img {
+    height: 49%;
+    margin-top: 10%;
+}
+
+.tiny {
+    height: 70px;
+    width: 70px;
+}
+
+.fix {
+    height: 200px;
+    width: 80%;
+    overflow: auto;
+
+}
