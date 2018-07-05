@@ -3,9 +3,7 @@ using System.Net;
 using System;
 using System.Collections.Generic;
 
-
-
-    namespace portfolio_2.Controllers     
+    namespace razor_fun.Controllers     
     {
         public class UserController : Controller   
         {
@@ -16,20 +14,6 @@ using System.Collections.Generic;
             {
                 // ViewBag.Example = "Hello World!";
                 return View("index");
-            }
-
-            [HttpGet]     
-            [Route("projects")] 
-            public IActionResult Projects()
-            {
-                return View("projects");
-            }
-
-            [HttpGet]      
-            [Route("contact")]     
-            public IActionResult Contact()
-            {
-                return View();
             }
 
         }

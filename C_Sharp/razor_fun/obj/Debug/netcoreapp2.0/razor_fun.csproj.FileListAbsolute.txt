@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\razor_fun\bin\Debug\netcoreapp2.0\razor_fun.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\razor_fun\bin\Debug\netcoreapp2.0\razor_fun.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\razor_fun\bin\Debug\netcoreapp2.0\razor_fun.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\razor_fun\bin\Debug\netcoreapp2.0\razor_fun.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\razor_fun\bin\Debug\netcoreapp2.0\razor_fun.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\razor_fun\obj\Debug\netcoreapp2.0\razor_fun.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\razor_fun\obj\Debug\netcoreapp2.0\razor_fun.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\razor_fun\obj\Debug\netcoreapp2.0\razor_fun.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\razor_fun\obj\Debug\netcoreapp2.0\razor_fun.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\razor_fun\obj\Debug\netcoreapp2.0\razor_fun.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\razor_fun\obj\Debug\netcoreapp2.0\razor_fun.pdb
