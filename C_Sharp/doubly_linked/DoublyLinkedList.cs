@@ -84,30 +84,27 @@ public class DoublyLinkedList
         {
             System.Console.WriteLine("no nodes in this list!!!");
         } 
+        if(head == tail) 
+        {
+            System.Console.WriteLine("only one node in this list!!!");
+        } 
         else
         {
-            var x = tail;
-            var runner = tail.prev;
+            DllNode yup = null;
+            tail = head;
+            var runner = head;
             System.Console.WriteLine("Reversing the list, starting at "+runner.value);
-            tail.next = tail.prev;
             while(runner != null) {
-                var temp = runner.prev;
+                yup = runner.prev;
                 runner.prev=runner.next;
-                runner.next = temp;
+                runner.next = yup;
                 System.Console.WriteLine(runner.value+" is the runner value");
-                if(runner.next == null){
-                    break;
-                }
-                System.Console.WriteLine(runner.next.value+" is the next value");
-                System.Console.WriteLine(runner.prev.value+" is the prev value");
-                runner = runner.next;
+                runner = runner.prev;
             }
-            System.Console.WriteLine("stopped at "+runner.value);
-            head = x;
-            tail = runner;
-            tail.next = null;
-            head.prev = null;
-            System.Console.WriteLine(head.value+" is the new head and "+runner.value+" is the new tail, which is equal to "+tail.value);
+            if(yup != null){
+                head = yup.prev;
+            }
+            System.Console.WriteLine(head.value+" is the new head and "+tail.value+" is the new tail");
         }
     } 
 
