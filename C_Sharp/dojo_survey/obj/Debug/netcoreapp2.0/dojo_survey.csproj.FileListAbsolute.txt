@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojo_survey\bin\Debug\netcoreapp2.0\dojo_survey.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojo_survey\bin\Debug\netcoreapp2.0\dojo_survey.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojo_survey\bin\Debug\netcoreapp2.0\dojo_survey.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojo_survey\bin\Debug\netcoreapp2.0\dojo_survey.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojo_survey\bin\Debug\netcoreapp2.0\dojo_survey.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojo_survey\obj\Debug\netcoreapp2.0\dojo_survey.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojo_survey\obj\Debug\netcoreapp2.0\dojo_survey.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojo_survey\obj\Debug\netcoreapp2.0\dojo_survey.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojo_survey\obj\Debug\netcoreapp2.0\dojo_survey.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojo_survey\obj\Debug\netcoreapp2.0\dojo_survey.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojo_survey\obj\Debug\netcoreapp2.0\dojo_survey.pdb
