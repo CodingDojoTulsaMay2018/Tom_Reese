@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Result";
+}
+
+@using dojo_model_survey.Models
+@model Ninja
+
+
+        <h1>RESULTS!!!</h1>
+         
+        <form>
+            <div class="form-group">
+                <label>Your Name: @Model.Name</label>
+            </div>
+            <div class="form-group">
+                <label for="sel1">Location: @Model.Location</label>
+            </div>
+            <div class="form-group">
+                <label for="sel1">Favorite Language: @Model.Language</label>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment (optional): @Model.Comment
+            </div>
+            <button asp-controller="Home" asp-action="Index" class="btn btn-default">Back</button>
+        </form>
