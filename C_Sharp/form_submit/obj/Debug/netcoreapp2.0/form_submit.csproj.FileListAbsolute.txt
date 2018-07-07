@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\form_submit\obj\Debug\netcoreapp2.0\form_submit.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\form_submit\obj\Debug\netcoreapp2.0\form_submit.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\form_submit\obj\Debug\netcoreapp2.0\form_submit.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\form_submit\obj\Debug\netcoreapp2.0\form_submit.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\form_submit\bin\Debug\netcoreapp2.0\form_submit.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\form_submit\bin\Debug\netcoreapp2.0\form_submit.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\form_submit\bin\Debug\netcoreapp2.0\form_submit.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\form_submit\bin\Debug\netcoreapp2.0\form_submit.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\form_submit\bin\Debug\netcoreapp2.0\form_submit.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\form_submit\obj\Debug\netcoreapp2.0\form_submit.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\form_submit\obj\Debug\netcoreapp2.0\form_submit.pdb

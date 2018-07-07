@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "NewUser Page";
+}
+@using form_submit.Models
+@model User
+
+<h3>Enter Your Information</h3>
+        <form asp-action="Create" asp-controller="Home" method="post">
+            <div class="form-group">
+                <span asp-validation-for="First_Name"></span>
+                <label asp-for="First_Name">First Name:</label>
+            <input type="text" name="First_Name"class="form-control">
+            </div>
+            <div class="form-group">
+                <span asp-validation-for="Last_Name"></span>
+                <label asp-for="Last_Name">Last Name:</label>
+                <input type="text" name="Last_Name"class="form-control">
+            </div>
+            <div class="form-group">
+                <span asp-validation-for="Age"></span>
+                <label asp-for="Age">Age:</label>
+                <input type="text"  name="age" class="form-control">
+            </div>
+            <div class="form-group">
+                <span asp-validation-for="Email"></span>
+                <label asp-for="Email">Email:</label>
+                <input type="email"  name="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <span asp-validation-for="Password"></span>
+                <label asp-for="Password">Password:</label>
+                <input asp-for="Password" type="password" name="password">
+            </div>
+            <input type="submit" class="btn btn-default" value="Add User">
+          </form>
