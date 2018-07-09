@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="box">
+    <@TempData>
+    <div class="result">@TempData["msg"]</div>
+</div>
+<form asp-action="Feed" asp-controller="Home" method="post">
+    <button class="btn btn-primary" type="submit">Feed</button>
+</form>
+<form asp-action="Play" asp-controller="Home" method="post">
+    <button class="btn btn-success" type="submit">Play</button>
+</form>
+<form asp-action="Work" asp-controller="Home" method="post">
+    <button class="btn btn-info" type="submit">Work</button>
+</form>
+<form asp-action="Sleep" asp-controller="Home" method="post">
+    <button class="btn btn-warning" type="submit">Sleep</button>
+</form>
+<form asp-action="Reset" asp-controller="Home" method="post">
+    <button class="btn btn-danger" type="submit">Reset</button>
+</form>

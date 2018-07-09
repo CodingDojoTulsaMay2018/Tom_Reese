@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Random passcode (@TempData["Count"])</h2>
+<div class="box">@TempData["passcode"]</div>
+<form asp-action="Generate" asp-controller="Home" method="post">
+<button type="submit">Energize!</button>
+</form>

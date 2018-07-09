@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\random_pass\bin\Debug\netcoreapp2.0\random_pass.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\random_pass\bin\Debug\netcoreapp2.0\random_pass.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\random_pass\bin\Debug\netcoreapp2.0\random_pass.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\random_pass\bin\Debug\netcoreapp2.0\random_pass.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\random_pass\bin\Debug\netcoreapp2.0\random_pass.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\random_pass\obj\Debug\netcoreapp2.0\random_pass.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\random_pass\obj\Debug\netcoreapp2.0\random_pass.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\random_pass\obj\Debug\netcoreapp2.0\random_pass.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\random_pass\obj\Debug\netcoreapp2.0\random_pass.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\random_pass\obj\Debug\netcoreapp2.0\random_pass.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\random_pass\obj\Debug\netcoreapp2.0\random_pass.pdb

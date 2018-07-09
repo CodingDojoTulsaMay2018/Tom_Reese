@@ -23,14 +23,9 @@ namespace dojo_survey_validation.Controllers
             }
             else
             {
-                return View("NewUser",user);
+                return View("Index",user);
             }
             }
-
-        public IActionResult NewUser()
-        {
-            return View();
-        }
 
         public IActionResult Result(User user)
         {

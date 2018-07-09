@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojodachi\bin\Debug\netcoreapp2.0\dojodachi.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojodachi\bin\Debug\netcoreapp2.0\dojodachi.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojodachi\bin\Debug\netcoreapp2.0\dojodachi.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojodachi\bin\Debug\netcoreapp2.0\dojodachi.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojodachi\bin\Debug\netcoreapp2.0\dojodachi.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojodachi\obj\Debug\netcoreapp2.0\dojodachi.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojodachi\obj\Debug\netcoreapp2.0\dojodachi.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojodachi\obj\Debug\netcoreapp2.0\dojodachi.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojodachi\obj\Debug\netcoreapp2.0\dojodachi.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojodachi\obj\Debug\netcoreapp2.0\dojodachi.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\dojodachi\obj\Debug\netcoreapp2.0\dojodachi.pdb
