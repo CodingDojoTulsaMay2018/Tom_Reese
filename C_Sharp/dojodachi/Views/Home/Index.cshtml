@@ -30,6 +30,14 @@
             <button class="btn btn-danger" type="submit">Reset</button>
         </form>
     }
+    @if(Convert.ToString(TempData["img"]) == "win"){
+        <img src="~/images/win.png" alt="">
+        <div class="result">@TempData["msg"]</div>
+
+        <form asp-action="Reset" asp-controller="Home" method="post">
+            <button class="btn btn-success" type="submit">Reset</button>
+        </form>
+    }
 </div>
 
 

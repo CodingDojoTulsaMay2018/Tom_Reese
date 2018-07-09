@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using dojodachi.Models;
-using System.Web.SessionState;
+// using System.Web.SessionState;
 
 namespace dojodachi.Controllers
 {
@@ -40,9 +40,14 @@ namespace dojodachi.Controllers
         pet.Fullness = (int)HttpContext.Session.GetInt32("fullness");
         pet.Meals = (int)HttpContext.Session.GetInt32("meals");          
 
-        if(HttpContext.Session.GetInt32("meals") == 0 || HttpContext.Session.GetInt32("energy") == 0)
+        if(HttpContext.Session.GetInt32("meals") == 0 || HttpContext.Session.GetInt32("energy") == 0 || HttpContext.Session.GetInt32("happiness") == 0 || HttpContext.Session.GetInt32("fullness") == 0)
         {TempData["img"] = "dead";
         TempData["msg"] = "Smiley is dead! You killed it, you monster!";
+        return View(pet);
+        }
+        if(HttpContext.Session.GetInt32("fullness") >= 100 && HttpContext.Session.GetInt32("energy") >= 100 && HttpContext.Session.GetInt32("happiness") >= 100)
+        {TempData["img"] = "win";
+        TempData["msg"] = "you are victorious!! Smiley is now free from your reign!";
         return View(pet);
         }
         return View(pet);
@@ -69,8 +74,6 @@ namespace dojodachi.Controllers
         HttpContext.Session.SetInt32("meals", mealsleft);
         HttpContext.Session.SetString("img", "smile");
         TempData["img"]  = HttpContext.Session.GetString("img");
-        }
-
         HttpContext.Session.SetString("img", "smile");
         TempData["img"]  = HttpContext.Session.GetString("img");
         TempData["msg"] = ("You fed Smiley! Meals: -1, Fullness: +"+addFullness);
@@ -79,6 +82,7 @@ namespace dojodachi.Controllers
         TempData["meal"] = HttpContext.Session.GetInt32("meals");
         TempData["ener"] = HttpContext.Session.GetInt32("energy");                 
         return RedirectToAction("Index");
+        }
         }
 
 
