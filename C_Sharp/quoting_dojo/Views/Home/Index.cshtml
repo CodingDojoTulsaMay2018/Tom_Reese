@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Welcome to Coding Dojo</h1>
+<form asp-controller="Home" asp-action="Quotes" method="post">
+    Your Name: <input type="text" name="djquotes">
+    Your Quote: <textarea name="quotext" id="" cols="30" rows="10" placeholder="Your quote here..."></textarea>
+    <button class="btn btn-info" type="submit">Submit</button>
+</form>
+<p></p>
+<a class="btn btn-success" href="Home/Quotes" method="get">See all quotes!</a>
+
+

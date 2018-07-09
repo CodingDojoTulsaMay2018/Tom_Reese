@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\quoting_dojo\obj\Debug\netcoreapp2.0\quoting_dojo.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\quoting_dojo\obj\Debug\netcoreapp2.0\quoting_dojo.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\quoting_dojo\obj\Debug\netcoreapp2.0\quoting_dojo.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\quoting_dojo\obj\Debug\netcoreapp2.0\quoting_dojo.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\quoting_dojo\bin\Debug\netcoreapp2.0\quoting_dojo.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\quoting_dojo\bin\Debug\netcoreapp2.0\quoting_dojo.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\quoting_dojo\bin\Debug\netcoreapp2.0\quoting_dojo.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\quoting_dojo\bin\Debug\netcoreapp2.0\quoting_dojo.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\quoting_dojo\bin\Debug\netcoreapp2.0\quoting_dojo.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\quoting_dojo\obj\Debug\netcoreapp2.0\quoting_dojo.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\quoting_dojo\obj\Debug\netcoreapp2.0\quoting_dojo.pdb

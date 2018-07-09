@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>All the Quotes!</h1>
+
+<table>
+<tr>
+    <th>Quoter</th>
+    <th>Quote</th>
+</tr>
+@foreach(var i in @ViewBag.AllUsers){
+<tr>
+    <td>@i["quoter"]</td>
+    <td>@i["quote"]</td>
+</tr>
+}
+</table>
