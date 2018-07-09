@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<h1>Rock, Paper, Sciccors</h1>
+<form asp-controller="Home" name="choice" asp-action="Process_Play" method="post">
+    <input name="hand" type="hidden" value="rock">
+    <button type="submit" >Rock</button>
+</form>
+<form asp-controller="Home" name="choice" asp-action="Process_Play" method="post">
+    <input name="hand" type="hidden" value="paper">
+    <button type="submit">Paper</button>
+</form>
+<form asp-controller="Home" name="choice" asp-action="Process_Play" method="post">
+    <input name="hand" type="hidden" value="scissors">
+    <button type="submit">Scissors</button>
+</form>
+<h3>You chose @TempData["you"], and the computer chose @TempData["com"].  Therefore....</h3>
