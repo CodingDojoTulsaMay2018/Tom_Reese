@@ -1,9 +1,9 @@
     public abstract class Phone 
     {
-        private string _versionNumber;
-        private int _batteryPercentage;
-        private string _carrier;
-        private string _ringTone;
+        public string _versionNumber {get; set;}
+        public int _batteryPercentage {get; set;}
+        public string _carrier {get; set;}
+        public string _ringTone {get; set;}
         public Phone(string versionNumber, int batteryPercentage, string carrier, string ringTone){
             _versionNumber = versionNumber;
             _batteryPercentage = batteryPercentage;
