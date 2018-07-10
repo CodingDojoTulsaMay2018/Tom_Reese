@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\music-linq\obj\Debug\netcoreapp2.0\LinqSkeleton.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\music-linq\obj\Debug\netcoreapp2.0\LinqSkeleton.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\music-linq\obj\Debug\netcoreapp2.0\LinqSkeleton.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\music-linq\obj\Debug\netcoreapp2.0\LinqSkeleton.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\music-linq\bin\Debug\netcoreapp2.0\LinqSkeleton.deps.json
+C:\Users\WhiteyBear\Desktop\music-linq\bin\Debug\netcoreapp2.0\LinqSkeleton.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\music-linq\bin\Debug\netcoreapp2.0\LinqSkeleton.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\music-linq\bin\Debug\netcoreapp2.0\LinqSkeleton.dll
+C:\Users\WhiteyBear\Desktop\music-linq\bin\Debug\netcoreapp2.0\LinqSkeleton.pdb
+C:\Users\WhiteyBear\Desktop\music-linq\obj\Debug\netcoreapp2.0\LinqSkeleton.dll
+C:\Users\WhiteyBear\Desktop\music-linq\obj\Debug\netcoreapp2.0\LinqSkeleton.pdb
