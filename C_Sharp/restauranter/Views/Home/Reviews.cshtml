@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "All Reviews";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Restaurant Name: </th>
+      <th scope="col">Star Rating (1-5)</th>
+      <th scope="col">Reviewer: </th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var i in ViewBag.info) {
+    <tr>
+      <td>@i.Restaurant_Name</td>
+      <td>@i.Stars</td>
+      <td>@i.Reviewer</td>
+      <td>@Convert.ToDateTime(i.Date).ToString("MMMM dd, yyyy")</td>
+    </tr>
+    <tr>
+      <td colspan="5" style="border-bottom: 3px solid black;"><strong>Review: </strong> @i.Review</td>
+    </tr>
+    }
+  </tbody>
+</table>

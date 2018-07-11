@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Write a new Review";
+}
+<h2 style="text-align: center;">@ViewData["Title"]</h2>
+<div class="container" style="width: 60%;">
+<form asp-controller="Home" asp-action="Create" name="person" method="post">
+    <div class="form-group">
+    Reviewer Name: <span style="color:red;" asp-validation-for="Reviewer" ></span><input class="form-control"name="reviewer" type="text" placeholder="...letters only, limited to 32 characters">
+    
+    Restaurant Name: <span style="color:red;" asp-validation-for="Restaurant_Name"></span><input class="form-control"type="text" name="restaurant_name" placeholder="...limited to 64 characters">
+    
+    Review:   <span style="color:red;" asp-validation-for="Review"></span>  <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="review"  placeholder="...limited to 255 characters"></textarea>
+    
+    Date of Visit: <span style="color:red;" asp-validation-for="Date"></span><input type="date" name="date" class="form-control" name="review_form">
+    
+    Stars: </span>  <select class="form-control" name="stars"  id="exampleFormControlSelect1">
+        <option>5</option>
+        <option>4</option>
+        <option>3</option>
+        <option>2</option>
+        <option>1</option>
+    </select>
+    
+    <button type="submit" class="btn btn-success">Submit</button>
+</div>
+</form>
+</div>

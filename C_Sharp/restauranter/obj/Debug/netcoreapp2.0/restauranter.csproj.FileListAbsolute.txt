@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\restauranter\obj\Debug\netcoreapp2.0\restauranter.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\restauranter\obj\Debug\netcoreapp2.0\restauranter.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\restauranter\obj\Debug\netcoreapp2.0\restauranter.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\restauranter\obj\Debug\netcoreapp2.0\restauranter.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\restauranter\bin\Debug\netcoreapp2.0\restauranter.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\restauranter\bin\Debug\netcoreapp2.0\restauranter.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\restauranter\bin\Debug\netcoreapp2.0\restauranter.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\restauranter\bin\Debug\netcoreapp2.0\restauranter.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\restauranter\bin\Debug\netcoreapp2.0\restauranter.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\restauranter\obj\Debug\netcoreapp2.0\restauranter.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\restauranter\obj\Debug\netcoreapp2.0\restauranter.pdb
