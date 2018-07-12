@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Login And/Or Registration";
+}
+<div class="container" style="width: 60%;">
+<form asp-controller="Home" asp-action="Create" name="person" method="post">
+    <div class="form-group">
+    First Name: <span style="color:red;" asp-validation-for="First_Name" ></span><input class="form-control"name="first_name" type="text" placeholder="...min 2 letters, alpha only">
+    
+    Last Name: <span style="color:red;" asp-validation-for="Last_Name"></span><input class="form-control"type="text" name="last_name" placeholder="...min 2 letters, alpha only">
+    
+    Email:   <span style="color:red;" asp-validation-for="Email"></span>  <input class="form-control"  name="email"  placeholder="...limited to 255 characters"></textarea>
+    
+    Password: <span style="color:red;" asp-validation-for="Password"></span><input type="password" name="password" class="form-control">
+
+    Password Confirm: <span style="color:red;" asp-validation-for="ConfirmPassword"></span><input type="password" name="confirmpassword" class="form-control">
+    
+    
+    <button type="submit" class="btn btn-success">Submit</button>
+</div>
+</form>
+<form asp-controller="Home" asp-action="Login" name="guy" method="post">
+    <div class="form-group">
+    
+    Email:   <span style="color:red;" asp-validation-for="Email"></span>  <input class="form-control"  name="email"  placeholder="...limited to 255 characters"></textarea>
+    
+    Password: <span style="color:red;" asp-validation-for="Password"></span><input type="password" name="password" class="form-control">
+    
+    <button type="submit" class="btn btn-success">Submit</button>
+</div>
+</form>
+</div>

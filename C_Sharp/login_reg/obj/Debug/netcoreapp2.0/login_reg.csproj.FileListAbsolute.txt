@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\login_reg\obj\Debug\netcoreapp2.0\login_reg.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\login_reg\obj\Debug\netcoreapp2.0\login_reg.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\login_reg\obj\Debug\netcoreapp2.0\login_reg.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\login_reg\obj\Debug\netcoreapp2.0\login_reg.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\login_reg\bin\Debug\netcoreapp2.0\login_reg.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\login_reg\bin\Debug\netcoreapp2.0\login_reg.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\login_reg\bin\Debug\netcoreapp2.0\login_reg.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\login_reg\bin\Debug\netcoreapp2.0\login_reg.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\login_reg\bin\Debug\netcoreapp2.0\login_reg.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\login_reg\obj\Debug\netcoreapp2.0\login_reg.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\login_reg\obj\Debug\netcoreapp2.0\login_reg.pdb
