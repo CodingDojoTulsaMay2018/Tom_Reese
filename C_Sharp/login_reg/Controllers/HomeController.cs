@@ -44,6 +44,7 @@ namespace login_reg.Controllers
             return View("Index");
         }
 
+        [HttpPost]
         public IActionResult Login(User guy){
             var user = _context.users.SingleOrDefault(u => u.Email == guy.Email);
             if(user != null && guy.Password != null)
@@ -56,8 +57,13 @@ namespace login_reg.Controllers
                 }
         }
         System.Console.WriteLine("***********DOUBLE FAIL**********");
-        return RedirectToAction("Index");
+        return View("Logging");
 
+        }
+
+        public IActionResult Logging()
+        {
+            return View();
         }
 
         public IActionResult Registration()
