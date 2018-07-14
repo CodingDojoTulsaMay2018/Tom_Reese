@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\bank_accounts\bin\Debug\netcoreapp2.0\bank_accounts.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\bank_accounts\bin\Debug\netcoreapp2.0\bank_accounts.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\bank_accounts\bin\Debug\netcoreapp2.0\bank_accounts.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\bank_accounts\bin\Debug\netcoreapp2.0\bank_accounts.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\bank_accounts\bin\Debug\netcoreapp2.0\bank_accounts.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\bank_accounts\obj\Debug\netcoreapp2.0\bank_accounts.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\bank_accounts\obj\Debug\netcoreapp2.0\bank_accounts.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\bank_accounts\obj\Debug\netcoreapp2.0\bank_accounts.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\bank_accounts\obj\Debug\netcoreapp2.0\bank_accounts.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\bank_accounts\obj\Debug\netcoreapp2.0\bank_accounts.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\bank_accounts\obj\Debug\netcoreapp2.0\bank_accounts.pdb

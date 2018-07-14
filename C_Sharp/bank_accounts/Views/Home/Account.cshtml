@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Welcome ";
+}
+<h2>@ViewData["Title"] @ViewBag.user.First_Name</h2>
+<h3>@ViewData["Message"]</h3>
+@model User
+
+<div style="width: 200px;">
+  <form asp-controller="Home" asp-action="Money">
+  Ca$h Deposit or Withdraw: <input name="amount" class="form-control form-control-lg" type="text" >
+  <input type="hidden" name="user_id" value="@ViewBag.user.Id_User" >
+  <button type="submit" class="btn btn-info">Submit</button>
+  </form>
+</div>
+<h1>Current Balance: $@TempData["sum"]</h1>  
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+        @foreach(Trans b in ViewBag.money){
+    <tr>
+      <td>@b.Id_Trans</td>
+      <td>@b.Amount</td>
+      <td>@b.Created_At</td>
+    </tr>}
+    </tbody>
+</table>
