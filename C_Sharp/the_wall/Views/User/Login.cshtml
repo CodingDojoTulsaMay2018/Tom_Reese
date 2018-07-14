@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+@model User
+<div class="container" style="width: 60%;">
+<form asp-controller="User" asp-action="Login" name="guy" method="post">
+    <div class="form-group">
+    
+    Email:   <span style="color:red;" asp-validation-for="Email"></span>  <input class="form-control"  name="email"  placeholder="...limited to 255 characters"></textarea>
+    
+    Password: <span style="color:red;" asp-validation-for="Password"></span><input type="password" name="password" class="form-control">
+    
+    <button type="submit" class="btn btn-success">Submit</button>
+</div>
+</form>
+</div>

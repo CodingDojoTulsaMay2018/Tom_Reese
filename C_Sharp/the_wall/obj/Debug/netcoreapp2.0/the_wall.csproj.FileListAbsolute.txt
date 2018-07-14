@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\the_wall\obj\Debug\netcoreapp2.0\the_wall.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\the_wall\obj\Debug\netcoreapp2.0\the_wall.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\the_wall\obj\Debug\netcoreapp2.0\the_wall.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\the_wall\obj\Debug\netcoreapp2.0\the_wall.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\the_wall\bin\Debug\netcoreapp2.0\the_wall.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\the_wall\bin\Debug\netcoreapp2.0\the_wall.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\the_wall\bin\Debug\netcoreapp2.0\the_wall.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\the_wall\bin\Debug\netcoreapp2.0\the_wall.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\the_wall\bin\Debug\netcoreapp2.0\the_wall.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\the_wall\obj\Debug\netcoreapp2.0\the_wall.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\the_wall\obj\Debug\netcoreapp2.0\the_wall.pdb

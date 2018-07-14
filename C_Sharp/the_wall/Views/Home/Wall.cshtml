@@ -1,0 +1,39 @@
+@using the_wall.Models
+@model AllModels
+
+
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<h1>Add Message</h1>
+<form asp-action="addMessage" asp-controller="Home" method="post">
+    Post: <input type="text" name="content" asp-for="Messages.Content">
+    <button type="submit">Add</button>
+</form>
+
+    
+
+
+<table class="table">
+  <tbody>
+    @foreach(var i in ViewBag.messages){
+    <tr>
+        <td>@i.Creator.First_Name @i.Creator.Last_Name</td>
+        <td>@i.Content</td>
+        <td>@i.Created_At</td>
+        <td><form asp-action="addComment" asp-controller="Home" method="post"><input type="text" name="post" asp-for="Comments.Post">
+        <input type="hidden" name="msg_id" value="@i.Id">
+        <button type="submit">Add Comment</button></form></td>
+    </tr>
+    @if(i.Comments != null){
+    @foreach(var comment in i.Comments){
+    <tr>
+        <td></td>
+        <td>
+            @comment.Creator.First_Name - @comment.Post
+        </td>
+        <td>@comment.Created_At</td>
+    </tr>}}
+ }
+</tbody>
+
