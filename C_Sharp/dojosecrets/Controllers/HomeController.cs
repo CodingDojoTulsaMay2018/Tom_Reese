@@ -47,7 +47,7 @@ namespace dojosecrets.Controllers
             foreach(var i in AllSecrets){
               i.Ago = i.Created_At.TimeAgo();
             }
-            ViewBag.secrets = AllSecrets;
+            ViewBag.secrets = AllSecrets.OrderByDescending(x => x.Created_At);
             TempData["secrets"] = "secrets";
             return View();
         }
@@ -107,7 +107,7 @@ namespace dojosecrets.Controllers
             foreach(var i in AllSecrets){
               i.Ago = i.Created_At.TimeAgo();
             }
-            ViewBag.secrets = AllSecrets;
+            ViewBag.secrets = AllSecrets.OrderByDescending(x => x.Likes.Count);
 
             return View();
         }
