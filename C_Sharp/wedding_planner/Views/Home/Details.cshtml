@@ -1,0 +1,34 @@
+﻿@{
+}
+@using wedding_planner.Models
+@model AllModels
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">wedding_planner</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Dash">Dashboard</a></li>
+                    <li><a asp-area="" asp-controller="User" asp-action="Logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<h2>@ViewData["Title"]</h2>
+        <h3>@ViewBag.CurrentWedding.Groom and @ViewBag.CurrentWedding.Bride's Wedding</h3>
+
+    </nav><br>
+    <h2>Date: @ViewBag.CurrentWedding.Date.ToString("MMMM dd, yyyy")</h2><br>
+    <h4>Guests:</h4>
+    <ul>
+        @foreach (var guest in @ViewBag.CurrentWedding.Guests) {
+            <li style="list-style: none;">@guest.Attendee.First_Name @guest.Attendee.Last_Name</li>
+        }
+    </ul>

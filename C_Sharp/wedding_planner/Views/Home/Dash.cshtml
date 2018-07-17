@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Welcome to the Wedding Planner";
+}
+@using wedding_planner.Models
+@model AllModels
+
+<h2>@ViewData["Title"]</h2>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">wedding_planner</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+ 
+                    <li><a asp-area="" asp-controller="User" asp-action="Logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<table class="table">
+<thead>
+    <tr>
+        <th>Wedding</th>
+        <th>Date</th>
+        <th>Guests</th>
+        <th>Action</th>
+    </tr>
+</thead>
+<tbody>
+    @foreach(var wed in ViewBag.weddings){
+    <tr>
+        <td> <a href="Details/@wed.Id">@wed.Groom & @wed.Bride</a></td>
+        <td>@wed.Date</td>
+        <td>@wed.Guests.Count</td>
+        @if(ViewBag.id == @wed.Userid){
+            <td><a href="Delete/@wed.Id">Delete</a></td>
+        }
+        else{ 
+            int Count = 0;
+            @foreach(var i in @wed.Guests){
+                @if(@i.Userid == ViewBag.id){
+                    Count = 1;
+                }
+            }
+            if(Count == 1){
+                <td><a href="Out/@wed.Id">UNRSVP</a></td>
+            }
+            else {
+                <td><a href="In/@wed.Id">RSVP</a></td>
+            }
+        }
+    </tr>
+        }
+</tbody>
+</table>
+<p></p>
+<a asp-area="" asp-controller="Home" asp-action="Plan" class="btn btn-info">Add a Wedding</a>

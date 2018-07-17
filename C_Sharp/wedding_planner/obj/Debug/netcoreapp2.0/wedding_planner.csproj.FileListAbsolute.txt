@@ -1,0 +1,11 @@
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\wedding_planner\bin\Debug\netcoreapp2.0\wedding_planner.deps.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\wedding_planner\bin\Debug\netcoreapp2.0\wedding_planner.runtimeconfig.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\wedding_planner\bin\Debug\netcoreapp2.0\wedding_planner.runtimeconfig.dev.json
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\wedding_planner\bin\Debug\netcoreapp2.0\wedding_planner.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\wedding_planner\bin\Debug\netcoreapp2.0\wedding_planner.pdb
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\wedding_planner\obj\Debug\netcoreapp2.0\wedding_planner.csprojAssemblyReference.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\wedding_planner\obj\Debug\netcoreapp2.0\wedding_planner.csproj.CoreCompileInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\wedding_planner\obj\Debug\netcoreapp2.0\wedding_planner.AssemblyInfoInputs.cache
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\wedding_planner\obj\Debug\netcoreapp2.0\wedding_planner.AssemblyInfo.cs
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\wedding_planner\obj\Debug\netcoreapp2.0\wedding_planner.dll
+C:\Users\WhiteyBear\Desktop\Bootcamp\Tom_Reese\C_Sharp\wedding_planner\obj\Debug\netcoreapp2.0\wedding_planner.pdb

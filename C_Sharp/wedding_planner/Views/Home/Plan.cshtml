@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Plan a New Wedding!";
+}
+@model Wedding
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">wedding_planner</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Dash">Dashboard</a></li>
+                    <li><a asp-area="" asp-controller="User" asp-action="Logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<div class="container" style="width: 60%;">
+<form asp-controller="Home" asp-action="New" method="post">
+    <div class="form-group">
+    
+    Bride: <span style="color:red;" asp-validation-for="Bride" ></span><input class="form-control"name="bride" type="text" placeholder="...min 2 letters, alpha only">
+    
+    Groom: <span style="color:red;" asp-validation-for="Groom"></span><input class="form-control"type="text" name="groom" placeholder="...min 2 letters, alpha only">
+
+    Date: <span style="color:red;" asp-validation-for="Date"></span><input type="date" name="date" class="form-control">
+
+    Address:   <span style="color:red;" asp-validation-for="Address"></span>  <input class="form-control"  name="address"  placeholder="...limited to 255 characters"></textarea>
+
+    <input type="hidden" name="Userid" value="@ViewBag.id">
+    <button type="submit" class="btn btn-success">Submit</button>
+</div>
+</form>
+</div>
