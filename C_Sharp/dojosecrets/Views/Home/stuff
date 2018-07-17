@@ -1,0 +1,33 @@
+<table>
+<thead>
+    <tr>
+        <th>Recent Secrets</th>
+    </tr>
+</thead>
+<tbody>
+    @foreach(var i in ViewBag.secrets){ -->
+     <tr>
+        <td> <a href="Details">@i.Text</a></td>
+        <td>@i.Created_At</td>
+        <td>@i.Likes.Count</td>
+        @if(ViewBag.id == @i.Userid){
+            <td><a href="Delete/@i.Id">Delete</a></td>
+        }
+        else{ 
+            int Count = 0;
+            @foreach(var j in @i.Likes){
+                @if(@j.Userid == ViewBag.id){
+                    Count = 1;
+                }
+            }
+            if(Count == 1){
+                <td>You liked this!!!</td>
+            }
+            else {
+                <td><a href="Like/@i.Id">Like!!!</a></td>
+            }
+        }
+    </tr>
+        } 
+</tbody>
+</table>

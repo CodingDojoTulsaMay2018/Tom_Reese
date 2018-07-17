@@ -4,17 +4,17 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
-namespace wedding_planner.Models{
-    public class Guest
+namespace dojosecrets.Models{
+    public class Like
     {
         [Key]
         public int Id {get;set;}
         
         public int Userid {get; set;}
-        public User Attendee {get; set;}
+        public User Liked {get; set;}
 
-        public int Weddingid {get; set;}
-        public Wedding Event { get; set; }
+        public int Secretid {get; set;}
+        public Secret Haslikes { get; set; }
 
 
 
