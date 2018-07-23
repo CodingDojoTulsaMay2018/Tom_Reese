@@ -19,7 +19,10 @@ namespace the_wall
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
+                .UseKestrel()
+                .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseStartup<startup>()
+                .UseIISIntegration()
                 .Build();
-    }
+    
 }
