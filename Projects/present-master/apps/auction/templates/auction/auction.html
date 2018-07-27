@@ -1,0 +1,210 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LAFFL Auction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip(); 
+        });
+    </script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'auction/css/styles.3.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar navbar-dark bg-primary">
+        <a class="navbar-brand" >Top 12 Auction</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/profile">Profile<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-link my_info" style="position: relative;
+            left: 35%; color: white;">My - Info&nbsp;&nbsp;&nbsp;Cap Space {{Cap}} &nbsp;&nbsp;&nbsp;Open Roster Spots {{Open}}</li>
+            <li>
+            <li>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            </li>
+          </ul>
+          <span class="navbar-text">
+                <a href="/logoff">logoff</a>&nbsp;&nbsp;&nbsp;
+          </span>
+          <span class="navbar-text">
+                <i class="fas fa-football-ball">long ashes fantasy football league</i>
+          </span>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="main1">
+                <div class="current_player">
+                    Player on Auction
+                </div>
+                <div class="current_bid">
+                    Current Bid 
+                </div> 
+                <div class="bid_time">
+                    Bid Time
+                    <div id="countdowntimer"><span id="future_date"><span></div> 
+                </div>
+        </div>
+        <div class="main2">
+            <div class="bottom col-12 overflow">
+                <div class="form-group">
+                    <table class="sticky-top table table-striped">
+                        <thead class="sticky-top">
+                            <tr>
+                                <th scope="col">Auction Log</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="table table-striped">
+                        <tbody>
+                        <tr>
+                            <td class="">Manager bid 6 on Player</td>
+                        </tr>                          
+                        <tr>
+                            <td class="">Manager bid 6 on Player</td>
+                        </tr>
+                        <tr>
+                            <td class="">Manager bid 5 on Player</td>
+                        </tr>
+                        <tr>
+                            <td class="">Manager bid 4 on Player</td>
+                        </tr>
+                        <tr>
+                            <td class="">Manager bid 3 on Player</td>
+                        </tr>
+                        <tr>
+                            <td class="">Manager bid 2 on Player</td>
+                        </tr>
+                        <tr>
+                            <td class="">Manager bid 1 on Player</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>   
+        <div class="footer1">
+            <form action="">
+                {% csrf_token %}
+                <button type="button" id="bid_button" class="btn btn-success btn-lg btn-block">Bid!</button>
+            </form>
+        </div>
+        <div class="main3">
+                <form action="">
+                    {% csrf_token %}
+                    <button type="button" class="bid_add btn btn-info">+1</button>
+                    <button type="button" class="bid_add btn btn-primary">+5</button>
+                    <button type="button" class="bid_add btn btn-success">+10</button>
+                </form>
+            <h3 class="my_bid_title">My Bid</h3>
+            <div class="my_bid">5</div>
+            <form action="" method="">
+                <button type="button" class="bid_minus btn btn-warning">-1</button>
+                <button type="button" class=" bid_minus btn btn-warning">-5</button>
+                <button type="button" class="bid_minus btn btn-danger">-10</button>
+            </form>  
+            <form action="" method="" id="clear_button">
+                {% csrf_token %}
+                <button type="button"  class="btn btn-secondary btn-lg btn-block">Clear!</button>
+            </form>     
+        </div>
+        <div class="main4">
+            <table class="sticky-top table table-striped">
+                <thead class="sticky-top">
+                    <tr>
+                        <th scope="col">Player</th>
+                        <th scope="col">Cap</th>
+                        <th scope="col">Years</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+            </table>
+            <table class="table table-striped">
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td class="">This guy</td>
+                    <td class="">cost</td>
+                    <td class="">years</td>
+                    <td><button class="btn btn-warning">Drop</button>
+                    <button class="btn btn-danger">Erase</button></td>
+                </tr>                          
+                <tr>
+                    <th scope="row">2</th>
+                    <td class="">This guy</td>
+                    <td class="">cost</td>
+                    <td class="">years</td>
+                    <td><button class="btn btn-warning">Drop</button>
+                    <button class="btn btn-danger">Erase</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td class="">This guy</td>
+                    <td class="">cost</td>
+                    <td class="">years</td>
+                    <td><button class="btn btn-warning">Drop</button>
+                    <button class="btn btn-danger">Erase</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td class="">This guy</td>
+                    <td class="">cost</td>
+                    <td class="">years</td>
+                    <td><button class="btn btn-warning">Drop</button>
+                    <button class="btn btn-danger">Erase</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td class="">This guy</td>
+                    <td class="">cost</td>
+                    <td class="">years</td>
+                    <td><button class="btn btn-warning">Drop</button>
+                    <button class="btn btn-danger">Erase</button></td>
+                </tr>                          
+                <tr>
+                    <th scope="row">6</th>
+                    <td class="">This guy</td>
+                    <td class="">cost</td>
+                    <td class="">years</td>
+                    <td><button class="btn btn-warning">Drop</button>
+                    <button class="btn btn-danger">Erase</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td class="">This guy</td>
+                    <td class="">cost</td>
+                    <td class="">years</td>
+                    <td><button class="btn btn-warning">Drop</button>
+                    <button class="btn btn-danger">Erase</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td class="">This guy</td>
+                    <td class="">cost</td>
+                    <td class="">years</td>
+                    <td><button class="btn btn-warning">Drop</button>
+                    <button class="btn btn-danger">Erase</button></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

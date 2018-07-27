@@ -1,0 +1,27 @@
+<html>
+<head>
+<script   src="https://code.jquery.com/jquery-2.2.3.js"   
+    integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   
+    crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+   var limit = 5*60*1000; // the time limit (in milliseconds) for the disable function
+   var timer = setTimeout(disableMyButton, limit);
+
+   function disableMyButton(){
+      $('#myButton').prop('disabled', true);
+      $("#statusMsg").text("Disabling before page refresh");
+      localStorage.setItem("isMyButtonDisabled", "true");
+   }
+
+   if(localStorage.getItem("isMyButtonDisabled") == "true"){
+     $("#statusMsg").text("Disabling after page refresh");
+     $('#myButton').prop('disabled', true);
+     window.clearTimeout(timer);
+   }
+});
+</script>
+</head>
+<input type = "button" id= "myButton" value= "Click me" />
+<p id="statusMsg" >  </p>
+</html>

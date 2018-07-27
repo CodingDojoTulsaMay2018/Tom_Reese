@@ -1,0 +1,21 @@
+<div class="form-group">
+    {% for message in Messages reversed%}
+    <h5>{{message.user.name}} - {{message.created_at}}</h5>
+        <p>{{message.text}}  
+            
+    {% endfor %}
+</div>
+
+
+<!-- <form action="/message" method="post">
+    {% csrf_token %}
+        <input type="hidden" name="message_id" value="{{message.id}}">
+        <textarea rows="2" cols="20" class="form-control" aria-label="With textarea" name="commentbox"></textarea>
+        <button type="submit"class="btn btn-outline-success pull-right" value="Comment"/>Comment</button>    
+    </form>
+    <p>{% for comment in Comments %}</p>
+        {% if comment.id == comment.review_id %}
+            <ul><h5>{{comment.user.name}} - {{comment.created_at}}</h5>
+            <p>{{comment.text}}</p></ul>
+        {% endif %}
+    {% endfor %}         -->

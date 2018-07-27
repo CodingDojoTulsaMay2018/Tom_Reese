@@ -1,0 +1,12 @@
+<table class="players sticky-top table">
+    <tbody>
+        {% for player in Players %}
+        <tr>
+            <td>{{player.name}}</td>
+            <td>{{player.salary}}</td>
+            <td>{{player.years}}</td>
+            <td>{{player.has_manager.name}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

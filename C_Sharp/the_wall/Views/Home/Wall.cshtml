@@ -21,9 +21,10 @@
         <td>@i.Creator.First_Name @i.Creator.Last_Name</td>
         <td>@i.Content</td>
         <td>@i.Created_At</td>
-        <td><form asp-action="addComment" asp-controller="Home" method="post"><input type="text" name="post" asp-for="Comments.Post">
+        <td><form asp-action="addComment" asp-controller="Home" method="post">
+            <div class="form-group"> <input type="text" name="post" asp-for="Comments.Post">
         <input type="hidden" name="msg_id" value="@i.Id">
-        <button type="submit">Add Comment</button></form></td>
+        <button type="submit">Add Comment</button></div></form></td>
     </tr>
     @if(i.Comments != null){
     @foreach(var comment in i.Comments){

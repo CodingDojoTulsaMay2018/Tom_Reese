@@ -1,0 +1,30 @@
+
+.container {
+  display: grid;
+  grid-template-columns: 15% 80%;
+  grid-template-rows: 35vw 5vw;
+  grid-gap: 1em;
+}
+
+footer {
+  grid-column: 1 / span 2;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 85em;
+  padding: 1em 0;
+}
+
+main,
+aside,
+footer {
+  background: #eaeaea;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main #profile_main{
+  align-items: left;
+}

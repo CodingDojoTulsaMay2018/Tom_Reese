@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manager Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip(); 
+        });
+    </script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'auction/css/styles.2.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar navbar-dark bg-primary">
+        <a class="navbar-brand" >Manager Profile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="/auction">Auction<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-link my_info" style="position: relative;
+            left: 35%; color: white;">My - Info&nbsp;&nbsp;&nbsp;Cap Space {{Cap}} &nbsp;&nbsp;&nbsp;Open Roster Spots {{Open}}</li>
+            <li>
+            </li>
+          </ul>
+          <span class="navbar-text">
+                <a href="/logoff">logoff</a>&nbsp;&nbsp;&nbsp;
+          </span>
+          <span class="navbar-text">
+                <i class="fas fa-football-ball">long ashes fantasy football league</i>
+          </span>
+        </div>
+    </nav>
+    <div class="container">
+        <aside class="player_grid" >
+            <div class="sticky-top player_filter">
+                <form action="/find_player" id="ajax_name" name="form_player" method="post">
+                    {% csrf_token %}
+                    <h3 class="text-center">Find a Player</h3>
+                    <input type="text" class="ajax_name" name="name_includes" />
+                </form>
+                <table class="players table">
+                    <thead class="players_head">
+                        <tr>
+                            <th>Name</th>
+                            <th>Cost</th>
+                            <th>Term</th>
+                            <th>Manager</th>
+                        </tr>
+                    </thead> 
+                </table> 
+            </div>
+            <div class="player_container">
+                <div class="ajax_content" id="placeholder1" ></div> 
+            </div>
+               
+        </aside>
+        <main>
+            <h2>Edit Your Info</h2>
+            <form action="/update" name="update" id="update" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <div class="form-group">
+                        <label>Team Name</label>
+                        <input type="text" name="team_name" class="form-control" placeholder="{{Team_Name}}">
+                    </div>
+                    <div class="form-group">
+                        <label>Slogan</label>
+                        <input type="text" name="slogan" class="form-control" placeholder="{{Slogan}}">
+                    </div>
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" name="username" class="form-control" placeholder="{{Username}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" name="email" class="form-control" placeholder="{{Email}}">
+                    </div>
+                    <input type="hidden" name="id" value="{{ID}}">
+                    <button type="submit" class="btn btn-primary">Edit</button>
+                </div>
+            </form>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}   
+        </main>
+        <div class="main2">
+                <div class="ajax_information">
+                    <form action="/manager_stats" name="manager_stats" id="manager_stats" method="post">
+                        {% csrf_token %}
+                        <div class="btn-group">
+                            <label for="manager_id">Choose Manager:</label>
+                            <select name="manager_id" class="form-control" >
+                                {% for manager in Managers %}
+                                <option  value="{{manager.id}}">{{manager.name}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </form>
+                    <table class="players table">
+                        <thead class="players_head">
+                            <tr>
+                                <th>Player</th>
+                                <th>Cost</th>
+                                <th>Term</th>
+                            </tr>
+                        </thead> 
+                    </table>
+                </div>
+                <div class="overflow">
+                    <div class="card-body">
+                            <p class="ajax_content2" id="placeholder2"></p> 
+                    </div>
+                </div>
+                
+        </div>
+    </div>            
+    <script>
+        function submitajax_name(){
+            console.log("working...")
+            $.ajax({
+                method: 'POST',
+                url: $('#ajax_name').attr('action'),
+                data: $('#ajax_name').serialize(),
+                success: function(serverResponse){
+                    console.log(serverResponse)
+                    $('#placeholder1').html(serverResponse)
+                }
+            })
+        };
+
+        $('input[name=name_includes]').keyup(function() {
+            submitajax_name(); 
+        });
+
+        function submitmanager_stats(){
+            console.log("working...")
+            console.log(document.manager_stats.manager_id.value)
+            $.ajax({
+                method: 'POST',
+                url: $('#manager_stats').attr('action'),
+                data:$('#manager_stats').serialize(),
+                success: function(serverResponse){
+                console.log(serverResponse)
+                $('#placeholder2').html(serverResponse)
+                }
+            })
+        };
+
+        $('select[name=manager_id]').on('change',function() {
+            console.log("selection works")
+            submitmanager_stats(); 
+        });    
+    </script> 
+</body>
+</html>
