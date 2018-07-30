@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    
+
+<script>
+const tigger = { character: "Tigger" };
+const pooh = { character: "Winnie the Pooh" };
+const piglet = {character:"Piglet"};
+const bees = {character: "Bees"};
+const owl = {character: "OWl"};
+const christopherrobin = {character: "Christopher Robin"};
+const rabbit = {character: "Rabbit"};
+const gopher = {character: "Gopher"};
+const kanga = {character: "Kanga"};
+const eeyore = {character: "Eeyore"};
+const heffalumps = {character: "Heffalumps"};
+
+tigger.north = pooh;
+pooh.north = christopherrobin;
+pooh.south = christopherrobin;
+pooh.west = piglet;
+pooh.east = bees;
+christopherrobin.north = kanga;
+christopherrobin.south = pooh;
+christopherrobin.east = rabbit;
+christopherrobin.west = owl;
+owl.south = piglet;
+owl.east = christopherrobin;
+piglet.north = owl;
+piglet.east = pooh;
+bees.north = rabbit;
+bees.west = pooh;
+rabbit.south = bees;
+rabbit.east = gopher;
+rabbit.west = christopherrobin;
+gopher.west = rabbit;
+kanga.north = eeyore;
+kanga.south = christopherrobin;
+eeyore.south = kanga;
+eeyore.east = heffalumps;
+heffalumps.west = eeyore;
+
+tigger.greet = function(){console.log("The wonderful thing about Tiggers is Tiggers are wonderful things!");}
+pooh.greet = function(){console.log("The best part of the day is when you and me become we.");}
+heffalumps.greet = function(){console.log("BRRruRUrrUummph");}
+eeyore.greet = function(){console.log("I guess you aren't coming to see me, no one usually is anyways.");}
+kanga.greet = function(){console.log("Hello there darling!");}
+christopherrobin.greet = function(){console.log("Let's go on an adventure!");}
+piglet.greet = function(){console.log("Oh de-dea-de-de-dear !");}
+owl.greet = function(){console.log("Whoooooo is it?");}
+bees.greet = function(){console.log("buuzzzzZZZZ BUZZ buzz BUUzzzzzz!");}
+gopher.greet = function(){console.log("Saaaaaay sonny");}
+rabbit.greet = function(){console.log("Stay OUT of my garden!");}
+            
+
+let player = {location : tigger};
+
+function move(direction){ 
+    if(player.location[direction] != null){
+    player.location = player.location[direction];
+    console.log("You are at "+player.location.character+"'s house");
+    player.location.greet();
+    return;}
+    console.log("You cannot go that way");
+}
+</script>
+</body>
+</html>
