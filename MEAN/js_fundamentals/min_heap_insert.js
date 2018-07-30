@@ -2,8 +2,8 @@ function insertIntoHeap(heap, val){
     if(!heap.length){
         heap.push(undefined);
         heap.push(val);
+        console.log(heap);
         return heap;}
-        heap.push(val);
     var i = heap.length-1;
     while(i >=2){
         if(heap[i-1] > heap[i] && heap[i-1] != undefined){
