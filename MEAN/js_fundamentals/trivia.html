@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Trivia</title>
+    <style>
+    body {
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+}
+
+.grid {
+  /* Grid Fallback */
+  display: flex;
+  flex-wrap: wrap;
+  
+  /* Supports Grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
+  grid-auto-rows: minmax(24%, auto);
+  grid-gap: 1em;
+}
+
+.module {
+  /* Demo-Specific Styles */
+  background: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  border-radius: 10%;
+  
+  /* Flex Fallback */
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 1 1 200px;
+}
+
+/* If Grid is supported, remove the margin we set for the fallback */
+@supports (display: grid) {
+  .module {
+    margin: 0;
+  }
+}
+</style>
+</head>
+<body>
+    <button class="go" type="submit">Go</button>
+        <div class="grid">
+  
+                <div class="module cat1" value="100">Points</div>
+                <div class="module cat2" value="100"></div>
+                <div class="module cat3" value="100"></div>
+                <div class="module cat1q1" value="200">200</div>
+                <div class="module cat2q1" value="100">100</div>
+                <div class="module cat3q1" value="100">100</div>
+                <div class="module cat1q2" value="200">200</div>
+                <div class="module cat2q2" value="200">200</div>
+                <div class="module cat3q2" value="300">200</div>
+                <div class="module cat1q3" value="200">300</div>
+                <div class="module cat2q3" value="300">300</div>
+                <div class="module cat3q3" value="300">300</div>
+              </div>
+
+</body>
+<script>
+    $(document).ready(function(){
+        var cachedThis = this; 
+
+$(this).dblclick(function() {
+$.ajax({
+    url: "https://opentdb.com/api.php?amount=1&category=15&type=multiple",
+    type: 'get',
+    dataType: "json",
+    success: function getqs(data) {
+  console.log(data.results[0]["question"]);
+  $(cachedThis).append(data.results[0]["question"]);
+  
+  }
+
+})
+})
+
+   });
+</script>
+</html>
