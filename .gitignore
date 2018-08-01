@@ -253,3 +253,5 @@ packages/bower_components/jquery/.bower.json
 MEAN/node_server/app.js
 MEAN/node_server/dojo.html
 MEAN/node_server/index.html
+MEAN/node/node_modules/node_module_basics/app.js
+MEAN/node/node_modules/node_module_basics/my_module.js

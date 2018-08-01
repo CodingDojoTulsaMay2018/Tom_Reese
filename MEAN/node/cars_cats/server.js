@@ -1,72 +1,73 @@
+
 var http = require('http');
 var fs = require('fs');
 var server = http.createServer(function (request, response){
     console.log('client request URL: ', request.url);
     if(request.url === '/cars') {
-        fs.readFile('cars.html', 'utf8', function (errors, contents){
+        fs.readFile('.views/cars.html', 'utf8', function (errors, contents){
             response.writeHead(200, {'Content-Type': 'text/html'});
             response.write(contents); 
             response.end();
         });
     }
     else if (request.url === "/cats") {
-         fs.readFile('cats.html', 'utf8', function (errors, contents){
+         fs.readFile('.views/cats.html', 'utf8', function (errors, contents){
              response.writeHead(200, {'Content-type': 'text/html'});
              response.write(contents); 
              response.end();
          });
     }
     else if (request.url === "/cars/new") {
-        fs.readFile('newcar.html', 'utf8', function (errors, contents){
+        fs.readFile('.views/newcar.html', 'utf8', function (errors, contents){
             response.writeHead(200, {'Content-type': 'text/html'});
             response.write(contents); 
             response.end();
         });
    } 
-   else if(request.url === '/images/chiron.jpg'){
-    fs.readFile('./images/chiron.jpg', function(errors, contents){
+   else if(request.url === 'views/images/chiron.jpg'){
+    fs.readFile('.views/images/chiron.jpg', function(errors, contents){
         response.writeHead(200, {'Content-type': 'image/jpg'});
         response.write(contents);
         response.end();
     })
   }
-  else if(request.url === '/images/lambo.jpg'){
-    fs.readFile('./images/lambo.jpg', function(errors, contents){
+  else if(request.url === 'views/images/lambo.jpg'){
+    fs.readFile('.views/images/lambo.jpg', function(errors, contents){
         response.writeHead(200, {'Content-type': 'image/jpg'});
         response.write(contents);
         response.end();
     })
   }
-  else if(request.url === '/images/henn.jpg'){
-    fs.readFile('./images/henn.jpg', function(errors, contents){
+  else if(request.url === 'views/images/henn.jpg'){
+    fs.readFile('.views/images/henn.jpg', function(errors, contents){
         response.writeHead(200, {'Content-type': 'image/jpg'});
         response.write(contents);
         response.end();
     })
   }
-  else if(request.url === '/images/cat.jpg'){
-    fs.readFile('./images/cat.jpg', function(errors, contents){
+  else if(request.url === 'views/images/cat.jpg'){
+    fs.readFile('.views/images/cat.jpg', function(errors, contents){
         response.writeHead(200, {'Content-type': 'image/jpg'});
         response.write(contents);
         response.end();
     })
   }
-  else if(request.url === '/images/cheetah.jpg'){
-    fs.readFile('./images/cheetah.jpg', function(errors, contents){
+  else if(request.url === 'views/images/cheetah.jpg'){
+    fs.readFile('.views/images/cheetah.jpg', function(errors, contents){
         response.writeHead(200, {'Content-type': 'image/jpg'});
         response.write(contents);
         response.end();
     })
   }
-  else if(request.url === '/images/explode.jpg'){
-    fs.readFile('./images/explode.jpg', function(errors, contents){
+  else if(request.url === 'views/images/explode.jpg'){
+    fs.readFile('.views/images/explode.jpg', function(errors, contents){
         response.writeHead(200, {'Content-type': 'image/jpg'});
         response.write(contents);
         response.end();
     })
   }
-  else if(request.url === '/stylesheets/style.css'){
-    fs.readFile('./stylesheets/style.css', 'utf8', function(errors, contents){
+  else if(request.url === 'views/stylesheets/style.css'){
+    fs.readFile('.views/stylesheets/style.css', 'utf8', function(errors, contents){
      response.writeHead(200, {'Content-type': 'text/css'});
      response.write(contents);
      response.end();
