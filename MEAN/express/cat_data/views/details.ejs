@@ -13,7 +13,9 @@
    <img src="<%= cats.Img %>" alt=""> 
    <h2>Fav Game:<%= cats.FavGame %></h2>
    <h2>Age: <%= cats.Age %></h2>
-   <h2>My Secrets: <%= cats.Secrets[0] %>, <%= cats.Secrets[1] %></h2>
+   <h2>My Secrets: <% for(var x in cats.Secrets) { %> 
+    <%= cats.Secrets[x] %>,
+    <% } %></h2>
 
    <a href="/">Home</a>
         
