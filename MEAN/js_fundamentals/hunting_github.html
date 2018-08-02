@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 function show_user(){
     // var link = $('.username').val()
-$.get("https://api.github.com/users/"+$("input[name = username]").val(), displayName)
+$.get("https://api.github.com/users/"+$("input[name = 'username']").val(), displayName)
 function displayName(data) {
   console.log(data);
   $('p').html(data.name)
