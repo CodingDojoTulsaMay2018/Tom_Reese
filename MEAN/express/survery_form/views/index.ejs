@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+         
+    <h3>Enter Your Information</h3>
+
+    <form action="/submit" class="submission" method="post">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" name="name"class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="sel1"> Dojo Location:</label>
+            <select  name="dojo_location" class="form-control">
+                <option value="Seattle">Seattle</option>
+                <option value="DC">DC</option>
+                <option value="Tulsa">Tulsa</option>
+                <option value="Dallas">Dallas</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sel1">Favorite Language:</label>
+            <select  name="fav_lang" class="form-control">
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+                <option value="Swift">Swift</option>
+                <option value="Mean">Mean</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comment">Comment (optional):</label>
+            <textarea class="form-control" rows="5" cols="30" name="comment"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+</body>
+</html>
