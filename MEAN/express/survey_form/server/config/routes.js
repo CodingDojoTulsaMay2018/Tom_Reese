@@ -9,8 +9,6 @@ module.exports = app =>{
   req.session.dojo_location = req.body.dojo_location;
   req.session.fav_lang = req.body.fav_lang;
   req.session.comment = req.body.comment;
-
-
   res.redirect('results')})
 
   app.get("/results", (req, res)=> {
