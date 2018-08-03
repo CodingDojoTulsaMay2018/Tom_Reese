@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type ="text/javascript">
+        $(document).ready(function (){
+    
+        var socket = io(); 
+
+  $('#survey').submit(function(e) {
+    console.log("selection works")
+    e.preventDefault()
+    socket.emit('formsubmit',{
+    name: $('#name').val(),
+    fav_lang: $('#fav_lang').val(),
+    dojo_location: $('#dojo_location').val(),
+    comment: $('#comment').val() });});
+  
+
+socket.on('greeting', function(data){
+    console.log("in html part");
+    $('#greet').html("You entered the following info: "+JSON.stringify(data.msg))
+    socket.on('number', function(data){
+    console.log("in html part");
+    $('#num').html("Your random number is: "+JSON.stringify(data.num),)
+})
+});
+})
+        
+    </script>
+</head>
+<body>
+    <p id="greet"></p>
+    <p id="num"></p>
+    <h3>Enter Your Information</h3>
+
+    <form action="/submit" id="survey" class="submission" method="post">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name"class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="sel1"> Dojo Location:</label>
+            <select  id="dojo_location" class="form-control">
+                <option value="Seattle">Seattle</option>
+                <option value="DC">DC</option>
+                <option value="Tulsa">Tulsa</option>
+                <option value="Dallas">Dallas</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sel1">Favorite Language:</label>
+            <select  id="fav_lang" class="form-control">
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+                <option value="Swift">Swift</option>
+                <option value="Mean">Mean</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comment">Comment (optional):</label>
+            <textarea class="form-control" rows="5" cols="30" id="comment"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+</body>
+</html>
