@@ -8,21 +8,19 @@ const server = app.listen(8000, function() {
 console.log("listening on port 8000");
 const io = require('socket.io')(server);
 
-var count = 0;
+// var color;
 
 io.on('connection', function (socket) {
-  io.emit('update', {msg:count})
+  // io.emit('color', {color : color})
   console.log("back at server")
   
-  socket.on('addsubmit', function() { //4
-    count++
-    console.log(count+" is the new count");
-  io.emit('update', { msg: count});})
+  socket.on('color', function(data) { //4
+    console.log(data.color);
+    
+    // color = data.color;
+    // console.log(data.color+" is the new color");
+  io.emit('update', { color: data.color});})
 
-  socket.on('destroy', function() {
-  count = 0;
-  io.emit('update', { msg: count});
-    ;})
   ;})
 });
 
