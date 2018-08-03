@@ -33,9 +33,3 @@ console.log("listening on port 8000");
 app.set('views', path.join(__dirname, './views'));
 app.set('view engine', 'ejs');
 require("./server/config/routes")(app);
-
-
-
-
-
-

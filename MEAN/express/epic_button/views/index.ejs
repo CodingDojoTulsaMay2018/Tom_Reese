@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type ="text/javascript">
+    $(document).ready(function (){
+        
+    var socket = io(); 
+    
+    $('#add').click(function(e) {
+    console.log("selection works")
+    e.preventDefault()
+    socket.emit('addsubmit',{});});
+      
+    
+    socket.on('update', function(data){
+    console.log("in html part");
+    $('.times').html("You entered the following info: "+JSON.stringify(data.msg))
+    
+    $('#destroy').click(function(e) {
+    console.log("selection works")
+    e.preventDefault()
+    socket.emit('destroy',{});});
+  
+    });
+    })
+            
+    </script>
+</head>
+<body>
+     <div class="container">
+        <h1>Counter</h1>
+        <div class="total"></div>
+        <div class="times"> times.</div>
+    <form action="/add2" id="add" method="post">
+        <button type="button" class="btn btn-primary">I'm a loser!</button>
+    </form>
+
+<form action="/destroy" id="destroy" method="post">
+    <button type="button" class="btn btn-danger" type="submit" name="reset" >Reset!</button>
+</form>
+
+     </div>    
+        
+</body>
+</html>
