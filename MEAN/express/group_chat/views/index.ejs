@@ -33,7 +33,7 @@
 </body>
     <script type ="text/javascript">
     $(document).ready(function (){
-    
+    var clear = ""
     var socket = io(); 
     var person = prompt("Please enter your name");
 //checking for dupes
@@ -53,6 +53,8 @@
     $( ".container" ).show();}
     document.getElementById("demo").innerHTML = txt;
 
+
+
 //magic emoticon function dust
     $(function() {
     // Initializes and creates emoji set from sprite sheet
@@ -71,7 +73,7 @@
     e.preventDefault()
     var msg = $('#msg').val();
     //this is SUPPOSED to clear the message field, but it doesnt...
-    $('#msg').val("");
+    $('#msg').val(" ")
     console.log($('#msg').val()+"is the new value in the text field");
     console.log("text submission works: "+msg)
     socket.emit('text', {msg: msg, person:person})})
@@ -85,9 +87,9 @@
 
 //this shows each new message after login
     socket.on('msg', function(chats){
-   $('.chatbox').prepend($('<p>').text(chats.msg));})
+   $('.chatbox').prepend($('<p>').text(chats.person+" : "+chats.msg));})
 
-   });
+});
 
 
 

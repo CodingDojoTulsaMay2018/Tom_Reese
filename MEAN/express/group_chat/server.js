@@ -39,11 +39,14 @@ if(dup != true){
     console.log(text.msg +" is the data");
     msgs.push(text.msg)
     console.log(text.person+" is the person");
-    io.emit('msg',{msg:text.msg})
+    io.emit('msg',{msg:text.msg, person:text.person})
   })
+
+  io.onconnection
 
 })
 });
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "./static")));
