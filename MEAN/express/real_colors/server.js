@@ -8,16 +8,16 @@ const server = app.listen(8000, function() {
 console.log("listening on port 8000");
 const io = require('socket.io')(server);
 
-// var color;
+var color;
 
 io.on('connection', function (socket) {
-  // io.emit('color', {color : color})
+  io.emit('update', {color : color})
   console.log("back at server")
   
   socket.on('color', function(data) { //4
     console.log(data.color);
     
-    // color = data.color;
+    color = data.color;
     // console.log(data.color+" is the new color");
   io.emit('update', { color: data.color});})
 

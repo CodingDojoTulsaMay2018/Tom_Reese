@@ -10,14 +10,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="/socket.io/socket.io.js"></script>
     <script type ="text/javascript">
-    $(document).ready(function (){
-        
+    $(document).ready(function (){ 
     var socket = io(); 
     
     $('button').click(function(e) {
     console.log("selection works")
-    // var color = 
-        socket.emit('color', {color: $(this).val()})})
+    socket.emit('color', {color: $(this).val()})})
       
     
     socket.on('update', function(data){
