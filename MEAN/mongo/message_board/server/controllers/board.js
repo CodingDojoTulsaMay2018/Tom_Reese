@@ -43,7 +43,6 @@ module.exports = {
             const comment = new Comment({
                 name: req.body.name,
                 comment: req.body.comment,
-                _post: req.params.id
             });
 
             comment.save(function(err){

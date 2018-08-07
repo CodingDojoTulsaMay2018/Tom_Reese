@@ -9,7 +9,7 @@
     <title>Beet Secrets</title>
 </head>
 <body>
-    <h1>Welcome to 1600 Acre Board</h1><br>
+    <h1>Welcome to 1600 Acre Beet Farm Board</h1><br>
     <% if(messages.registration) { %>
         <% for (var x of messages.registration) { %>
         <li><%= x %></li>
@@ -22,7 +22,7 @@
     </form> 
     <div class="container">
         <table class='table table-striped'>
-            <% for (var i in posts) { %>
+            <% for (var i in posts.reverse()) { %>
                 <tr>
                 <td><b>Name:</b> <%= posts[i].name %></td>
                 <td><b>Message:</b> <%= posts[i].post %></td>

@@ -3,9 +3,7 @@ const Schema = mongoose.Schema
 
 const CommentSchema = new mongoose.Schema({
     name: {type: String, required: [true, "Comment name field is required"], minlength:2}, 
-    comment: {type: String, required: [true, "Comment text field is required"], minlength:2},
-    _post: { type : Schema.Types.ObjectId, ref: 'Post' }
-    
+    comment: {type: String, required: [true, "Comment text field is required"], minlength:2}    
 }, {timestamps: true})
 
 mongoose.model('Comment', CommentSchema);
