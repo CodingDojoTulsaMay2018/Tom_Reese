@@ -5,4 +5,4 @@ const RaptorSchema = new mongoose.Schema({
     ability: {type: String, required: [true, "Name field is required"], minlength:2}
    }, {timestamps: true})
 
-raptor.model('Raptor', RaptorSchema);
+mongoose.model('Raptor', RaptorSchema);

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Rap Dash!!!</title>
+</head>
+<body>
+    <div class="container">
+        <h1><%= raptor.name %>'s Profile</h1>
+        <div class="main">
+            <% if (raptor.ability == 'phil') { %>
+                <img src="/images/phil.jpg" alt="philosoraptor">
+            <% } %>
+            <% if (raptor.ability == 'veloc') { %>
+                <img src="/images/veloc.jpg" alt="velociraptor">
+            <% } %>
+            <% if (raptor.ability == 'slap') { %>
+                <img src="/images/slap.png" alt="vince carter">
+            <% } %>
+            <% if (raptor.ability == 'standard') { %>
+                <img src="/images/stan.jpg" alt="business raptor">
+            <% } %>
+            <table>
+                <tr>
+                    <td><b>Ability: </b></td>
+                    <td><%= raptor.ability %></td>
+                </tr>
+                <tr>
+                    <td><a class='btn btn-danger' href="/destroy/<%= raptor._id %>">Delete</a></td>
+                    <td><a class='btn btn-secondary' href="/edit/<%= raptor._id %>">Edit</a></td>
+                    <td><a class='btn btn-primary' href="/">Back</a></td>
+                </tr>
+                
+            </table><br>
+        </div>
+    </div>
+</body>
+</html>

@@ -5,32 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Quoting Dojo</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Raptor Dashboard</title>
 </head>
 <body>
-    <h1>Let's Make A Quote!!!</h1>
-    <% if(messages.registration) { %>
-        <% for (var x of messages.registration) { %>
-        <li><%= x %></li>
-        <% } %>
-    <% } %> 
-    <form action="/quotes" method="post">
-        <table>
-            <tr>
-                <td>Your name: </td>
-                <td><input class='form-control' type="text" name="name"></td>
-            </tr>
-            <tr>
-                <td>Your ability: </td>
-                <td><textarea class='form-control' name="quote"cols="50" rows="5"></textarea></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><button class='btn btn-success' type="submit">Add Raptor</button> <a style='float: right;' class='btn btn-primary' href='/raptors'>Skip To Raptors</a></td>
-                <td></td>
-            </tr>
-        </table>
-    </form>
+    <div class="container">
+        <h1>Welcome to the Raptor Dashboard</h1><br>
+        <div class="main">
+            <h4>All Raptors:</h4>
+            <table class='table table-striped'>
+                <% for (var i in raptors) { %>
+                    <tr>
+                        <td><a href="/raptors/<%= raptors[i]._id %>"><p><%= raptors[i].name %></p></a></td>
+                    </tr>
+                <% } %>
+            </table>
+            <a class='btn btn-primary' href="/raptors/new">Create A Raptor</a>
+        </div>
+    </div>
 </body>
+<style>
+</style>
 </html>
