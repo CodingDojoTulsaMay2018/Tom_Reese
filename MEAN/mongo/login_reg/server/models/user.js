@@ -1,20 +1,88 @@
 var mongoose = require("mongoose")
 const Schema = mongoose.Schema
-
+var uniqueValidator = require('mongoose-unique-validator');
 
 
 
 const UserSchema = new Schema({
-    first_name:{type: String, validate: firstNameValidator},
-    last_name:{type: String, required: true, validate: lastNameValidator},
-    password:{type: String, required: true},
-    email:{type: String, required: true, validate: emailValidator},
-    birthday: {type: String, required: [true, "Birthday field is required"], minlength:2}    
+    first_name:{type: String, 
+        required: [true, "First name field is required"], 
+        minlength:2,
+        maxlength: 32},
+    last_name:{type: String,
+        required: [true, "Last name field is required"], 
+        minlength:2,
+        maxlength: 32
+    },
+    password:{type: String, 
+        required: [true, "Password field is required"], 
+        minlength:2,
+        maxlength: 32
+    },
+    email: {
+        type: String, 
+        unique: true,
+        required: [true, "Email is required."],
+        validate: {
+            validator: function(email) {
+                return /^[a-zA-Z0-9.!#$%&’+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)$/.test(email)
+            },
+            message: 'Please enter a valid email.'
+        }, 
+        maxlength: [120, 'Email must be less than 120 characters.']
+    },
+    birthday: {type: Date,
+        validate: {
+            validator: function checkDates(value) {
+               return _calculateAge(value)               
+             },
+             message: date => `Must be older than 18 to enter!!!`
+        },
+        required: [true, "Birthday field is required"]}    
 }, {timestamps: true})
 
 
 
+function _calculateAge(birthday) { // birthday is a date
+    var ageDifMs = Date.now() - birthday.getTime();
+    var ageDate = new Date(ageDifMs); // miliseconds from epoch
+    var diff = Math.abs(ageDate.getUTCFullYear() - 1970)
+    if(diff > 17){
+        return true
+    }
+    return false
+}
+
 mongoose.model('User', UserSchema);
+UserSchema.plugin(uniqueValidator, {message: "Email must be unique"});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // var validate = require('mongoose-validator');
 // var uniqueValidator = require('mongoose-unique-validator');

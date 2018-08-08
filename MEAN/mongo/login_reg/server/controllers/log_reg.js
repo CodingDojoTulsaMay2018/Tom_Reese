@@ -8,12 +8,10 @@ module.exports = {
     index: (req, res) => {
         res.render("index");
             },
-    
-    users: (req, res) => {
-        console.log("creating a new post");
-        
-        const user = new User(req.body);
-        user.save(function(err){
+    reg: (req, res) => {
+        console.log("registering a new user");
+        const newUser = new User(req.body);
+        newUser.save(function(err){
             if(err){
                 console.log("This error was thrown: ", err);
                 for(var key in err.errors){
@@ -22,37 +20,40 @@ module.exports = {
                 res.redirect('/');
             }
             else {
-                res.redirect('/');
+                console.log(newUser);
+                newUser.password = bcrypt.hashSync(newUser.password, 10)
+                newUser.save()
+                res.redirect('/success');
             }
         });
     },
-
-    sessions: (req, res) => {
-        console.log("creating a new comment");
-        User.findOne({_id: req.params.id},(err,post) =>{
+    
+    log: (req, res) => {
+        console.log("user is trying to log in");
+        User.findOne({email: req.body.email},(err, user) =>{
             if(err){
                 console.log(err);
+                res.redirect('/');
             }
-            else{        
-            res.redirect('/');
+            if(user === null){
+                console.log("User doesn't exist");
+                res.redirect('/'); 
+            }
+            else{
+                passwordIsValid = bcrypt.compareSync(req.body.password, user.password)
+                if(passwordIsValid){
+                    console.log(user.first_name);
+                    res.redirect('/success'); 
                 }
-            })
+                else{
+                    console.log("The password is incorrect")
+                    res.redirect('/')
+                }
             }
+        })
+    },
+    
+    success: (req, res) => {
+        res.render("success");
+            },
 }
-
-// bcrypt.hash('password_from_form', 10)
-// .then(hashed_password => {
-	 
-// })
-// .catch(error => {
-	 
-// });
-
-
-// bcrypt.compare('password_from_form', 'stored_hashed_password')
-// .then( result => {
-	 
-// })
-// .catch( error => {
-	 
-// })

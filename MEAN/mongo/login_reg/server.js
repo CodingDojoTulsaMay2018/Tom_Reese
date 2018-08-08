@@ -5,7 +5,6 @@ const session = require('express-session');
 const app = express();
 const PORT = 8000;
 const flash = require('express-flash');
-// const bcrypt = require('bcrypt-as-promised');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "./static")));
