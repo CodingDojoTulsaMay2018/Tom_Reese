@@ -36,7 +36,7 @@ const UserSchema = new Schema({
             validator: function checkDates(value) {
                return _calculateAge(value)               
              },
-             message: date => `Must be older than 18 to enter!!!`
+             message: date => `Must be older than 18 to enter (or less than 120)!!!`
         },
         required: [true, "Birthday field is required"]}    
 }, {timestamps: true})
@@ -47,7 +47,7 @@ function _calculateAge(birthday) { // birthday is a date
     var ageDifMs = Date.now() - birthday.getTime();
     var ageDate = new Date(ageDifMs); // miliseconds from epoch
     var diff = Math.abs(ageDate.getUTCFullYear() - 1970)
-    if(diff > 17){
+    if(diff > 17 && diff < 120){
         return true
     }
     return false

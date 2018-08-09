@@ -40,7 +40,7 @@ module.exports = {
                 res.redirect('/'); 
             }
             else{
-                passwordIsValid = bcrypt.compareSync(req.body.password, user.password)
+                passwordIsValid = bcrypt.compareSync(req.body.password,user.password)
                 if(passwordIsValid){
                     console.log(user.first_name);
                     res.redirect('/success'); 
