@@ -1,0 +1,55 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+   {{ title }}!
+  </h1>
+
+  <h2>Show All</h2>
+
+  <div *ngFor="let i of animals">
+    <p>
+        Name: {{ i.name }}
+        <br>
+        Population: {{ i.population }} 
+       <br>
+       <button (click)="onButtonClickParam({ i:i._id })">Submit</button>
+    </p>
+  
+  </div>
+
+  <h2>Add Animal</h2>
+<form (submit)="onSubmit ()">
+  <p> {{ newAnimal | json }}</p>
+Name: <input type="text" name="name" 
+required
+minlength="2"
+maxlength="15"
+[(ngModel)]="newAnimal.name"
+#name="ngModel">
+{{ name.errors | json }}
+{{ name.valid | json }}
+<div *ngIf="!name.valid">Name is not valid!</div>
+
+<br>
+Population: <input type="number" name="population"
+required
+[(ngModel)]="newAnimal.population"
+#population="ngModel"><br>
+<input type="submit" value="Create Animal">
+{{ population.errors | json }}
+{{ population.valid | json }}
+
+</form>
+
+
+  <h2>Show One</h2>
+  <div *ngIf="showing">
+      Name: {{ showing.name }}
+       <br>
+       Population: {{ showing.population }} 
+      <br>
+      <button (click)="onClear ()">Clear</button>
+    
+    </div>
+ 
+
