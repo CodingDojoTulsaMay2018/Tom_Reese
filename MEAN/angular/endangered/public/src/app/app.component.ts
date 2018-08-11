@@ -20,7 +20,6 @@ export class AppComponent implements OnInit {
     this.showAnimalsFromService(str["i"])
     ;}
 
-
   constructor(private _httpService: HttpService){}
   // ngOnInit will run when the component is initialized, after the constructor method.
   ngOnInit(){
