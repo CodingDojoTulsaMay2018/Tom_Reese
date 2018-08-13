@@ -1,0 +1,71 @@
+<div class="container">
+  <h1>{{ greet }}!</h1>
+
+  <form (submit)="onSubmit ()">
+    <div class="form-group">
+ 
+    Title: <input class="form-control" type="text" name="name" 
+    required
+    minlength="2"
+    maxlength="32"
+    [(ngModel)]="newTask.title"
+    #title="ngModel">
+    
+    <br>
+    Description: <input class="form-control" type="text" name="description"
+    required
+    [(ngModel)]="newTask.description"
+    #description="ngModel"><br>
+
+    <input type="submit" value="Create Task">
+
+    </div>
+    </form>
+
+
+        <div class="tasklist" >
+            <div class="task" *ngFor="let i of tasks">
+              {{ i.title }} 
+              <button (click)="showTask(i)">Show</button>
+              <button (click)="updateTask(i)">Update</button>
+            </div>
+      </div>
+  
+
+
+
+  <div class="task" *ngIf="showing">
+    <p>Title: {{ showing.title }}</p>
+    Description: {{showing.description}}
+    <button (click)="onDelete(showing._id)">Delete</button>
+  </div>
+
+  <div class="task" *ngIf="update">
+  <form (submit)="onUpdate()">
+      <div class="form-group">
+   
+      Title: <input class="form-control" type="text" name="name" 
+      required
+      minlength="2"
+      maxlength="32"
+      [(ngModel)]="update.title"
+      value="update.title"
+      #title="ngModel">
+      
+      <br>
+      Description: <input class="form-control" type="text" name="description"
+      required
+      [(ngModel)]="update.description"
+      #description="ngModel"
+      value="update.description"><br>
+  
+      <input type="submit" value="Update Task">
+
+      </div>
+      </form>
+    </div>
+
+
+
+
+</div>

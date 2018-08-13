@@ -1,18 +1,21 @@
-<h1>
-    {{ title }}!
-   </h1>
+  <div class="container">
+    <h1>{{ title }}!</h1>
  
-   <button (click)="onshowAll()"><h2>Get All Tasks</h2></button> 
- 
-   <div *ngIf="showAll">
-   <div *ngFor="let i of tasks">
-     <p>{{ i.title }} <button (click)="showTask(i)">Show</button></p>
-   </div>
-  </div>
- 
+  <button (click)="onshowAll()"><h2>Get All Tasks</h2></button> 
 
-   <div *ngIf="showing">
-     <p>Title: {{ showing.title }}</p>
-     <p>Description: {{showing.description}}</p>
-     </div>
+  <div *ngIf="showAll">
+  <div *ngFor="let i of tasks">
+    <p>{{ i.title }} <button (click)="showTask(i)">Show</button></p>
+  </div>
+ </div>
+
+
+  <div *ngIf="showing">
+    <p>Title: {{ showing.title }}</p>
+    <p>Description: {{showing.description}}</p>
+    </div>
+
+
+
+  </div>
 
