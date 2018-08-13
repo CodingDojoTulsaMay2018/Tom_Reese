@@ -1,6 +1,9 @@
 <div class="container">
   <h1>{{ greet }}!</h1>
 
+  <app-task *ngIf="showing" [tom]='showing'></app-task>
+
+
   <form (submit)="onSubmit ()">
     <div class="form-group">
  
@@ -64,7 +67,6 @@
       </div>
       </form>
     </div>
-
 
 
 
