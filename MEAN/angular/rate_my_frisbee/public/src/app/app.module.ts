@@ -4,12 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpService } from './http.service';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { TaskComponent } from './task/task.component';
+import { FrisbeeComponent } from './frisbee/frisbee.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TaskComponent
+    FrisbeeComponent
   ],
   imports: [
     BrowserModule,

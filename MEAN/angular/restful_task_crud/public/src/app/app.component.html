@@ -1,7 +1,7 @@
 <div class="container">
   <h1>{{ greet }}!</h1>
 
-  <app-task *ngIf="showing" [tom]='showing'></app-task>
+  <app-task *ngIf="showing" (myEvent)="onDelete($event)" [tom]='showing'></app-task>
 
 
   <form (submit)="onSubmit ()">
