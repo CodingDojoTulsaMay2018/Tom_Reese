@@ -1,0 +1,22 @@
+
+<div class="container">
+  <a [routerLink]="['/new']">Add an raptor</a>
+  <br>
+  <h3>We have meals by...</h3>
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Raptor</th>
+        <th scope="col">Abilities</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of raptors">
+        <td>{{ i.name }}</td>
+        <td>{{ i.ability }}</td>
+        <td><button [routerLink]="['/edit', i._id]">Edit</button> &nbsp; <button (click)="onDelete(i._id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

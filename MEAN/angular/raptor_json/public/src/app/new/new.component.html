@@ -1,0 +1,33 @@
+<div class="container">
+    <a [routerLink]="['/']">Home</a>
+    <br>
+    <h3>Add an raptor</h3>
+    <div class="add">
+      <div *ngIf="error">{{ error }}</div>
+        <form (submit)="onAdd()">
+          Name:       
+          <input type="text" 
+          name="newRaptor.name" 
+          [(ngModel)]="newRaptor.name" 
+          required 
+          minlength="2" 
+          maxlength="64" 
+          #name="ngModel"
+          >
+          <br>
+          Ability: <input type="text" name="newRaptor.ability"  
+          [(ngModel)]="newRaptor.ability" 
+          required 
+          minlength="2" 
+          maxlength="64" 
+          #ability="ngModel"
+          >
+          <div *ngIf="ability.valid">Ability is valid!</div>
+          <div *ngIf="name.valid">
+              <input type="submit" value="Add Raptor">
+            </div>    
+            <button (click)="goHome()">Cancel</button>
+            <div *ngIf="name.valid">Your name is now valid!!</div>
+        </form>
+      </div>
+      </div>
