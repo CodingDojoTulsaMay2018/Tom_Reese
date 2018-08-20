@@ -23,11 +23,4 @@ raptors: object
     })
   }
 
-  onDelete(id){
-  console.log("deleting ",id);
-  let observable = this._httpService.deleteRaptor(id);
-  observable.subscribe()
-  this.getPeeps()
-  }
-
 }

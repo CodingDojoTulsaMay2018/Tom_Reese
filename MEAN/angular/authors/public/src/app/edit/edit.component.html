@@ -1,0 +1,22 @@
+<div class="container">
+<a [routerLink]="['/']">Home</a>
+<br>
+<h3>Edit an author</h3>
+<div class="edit">
+  <div *ngIf="error">{{ error }}</div>
+  <form (submit)="onUpdate()">
+    Name: <input type="text" name="editAuthor.name"  
+    [(ngModel)]="editAuthor.name" 
+    required 
+    minlength="2" 
+    maxlength="64" 
+    #name="ngModel"
+    >
+    <!-- <div *ngIf="name.valid"> -->
+      <input type="submit" value="Update Author">
+      <button (click)="goHome()">Cancel</button>
+      <!-- </div> -->
+      <div *ngIf="name.valid">Name is valid!</div>
+  </form>
+</div>
+</div>

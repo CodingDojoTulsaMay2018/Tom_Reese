@@ -1,0 +1,13 @@
+<h2>Sell more coins now!!!</h2>
+<br>
+<br>
+<div *ngIf="coins > 0">
+  Current Shinto Coin Value: ${{ cost }} <br>
+  Current Coin Amount: {{ coins }}
+  <form (submit)="onSell()" >
+    <input type="number"  name="number" [(ngModel)]="number" >
+    <input type="submit" value="Sell!">
+  </form>
+</div>
+<div *ngIf="error">{{ error }}</div>
+<div *ngIf="coins <= 0">We are out of coins!!!</div>

@@ -6,7 +6,9 @@
     <div *ngIf="error">{{ error }}</div>
 
   <form (submit)="onUpdate()">
-    Name: <input type="text" name="editRaptor.name"  
+    Name: 
+    <input type="text" 
+    name="editRaptor.name"  
     [(ngModel)]="editRaptor.name" 
     required 
     minlength="2" 
@@ -14,18 +16,22 @@
     #name="ngModel"
     >
     <div *ngIf="name.valid">Name is valid!</div>
-    Ability: <input type="text" name="editRaptor.ability"  
+    Ability: 
+    <input type="text" 
+    name="editRaptor.ability"  
     [(ngModel)]="editRaptor.ability" 
     required 
     minlength="2" 
     maxlength="64" 
     #ability="ngModel"
     >
+
     <div *ngIf="ability.valid">Ability is valid!</div>
     <!-- <div *ngIf="name.valid"> -->
-      <input type="submit" value="Update Raptor">
-      <button (click)="goHome()">Cancel</button>
-      <!-- </div> -->
+    <input type="submit" value="Update Raptor">
+    <button (click)="onDelete(editRaptor._id)">Delete</button>
+    <button (click)="goHome()">Cancel</button>
+    <!-- </div> -->
   </form>
 </div>
 </div>

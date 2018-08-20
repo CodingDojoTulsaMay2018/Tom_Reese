@@ -1,5 +1,7 @@
+import { Frisbee } from './frisbee';
 import { HttpService } from './http.service';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -11,24 +13,17 @@ export class AppComponent implements OnInit {
   greet = 'My Frisbees';
   frisbees: any;
   showing: any;
-  newFrisbee: any;
+  newFrisbee = new Frisbee();
   update: any;
-
-  onButtonClickParam(str: String): void { 
-    // console.log(str);
-    // console.log(`Click event is working with animal id: ${str["i"]}`)
-    // this.showAnimalsFromService(str["i"])
-    ;}
+  ratedFrisbee: any
 
   constructor(private _httpService: HttpService){}
-  // ngOnInit will run when the component is initialized, after the constructor method.
   ngOnInit(){
     this.getFrisbeesFromService();
     this.newFrisbee = { title: "", description: ""}
   }
 
   showFrisbee(obj: object): void { 
-    // console.log(str);
     console.log(`Click event is working with frisbee id: ${obj}`)
     this.showing =obj
     this.update = ""
@@ -41,29 +36,33 @@ export class AppComponent implements OnInit {
 
   onshowAll() {
     console.log("showing all");
-    
    this.getFrisbeesFromService()
   }
 
   onSubmit() {
-   this.postFrisbeesFromService(this.newFrisbee) 
+   this._httpService.postFrisbees(this.newFrisbee).subscribe(data => {
+      this.frisbees = data;
+   });
    this.newFrisbee = { title: "", description: ""}
   }
 
   onUpdate() {
-    this.updateFrisbeeFromService(this.update) 
+    this._httpService.putFrisbees(this.update.id,this.update).subscribe(data =>{
+      this.update = ""
+      this.showing =data})
+      this.getFrisbeesFromService()
    }
 
   onClear() {
      this.showing= ""
    }
 
-
   onDelete(id){
-    console.log(id, "grabbed the id from HTML");
-    
-    this.deleteFrisbeeFromService(id);
-    this.showing= ""
+    this._httpService.getFrisbee(id).subscribe(data => {
+      this.showing = data;
+      console.log(this.showing," this is the frisbee we are showing")
+    });
+    this._httpService.getFrisbees()
   }
 
   getFrisbeesFromService(){
@@ -75,40 +74,16 @@ export class AppComponent implements OnInit {
     });
   }
 
-  getFrisbeeFromService(id){
-    let observable = this._httpService.getFrisbee(id);
-    observable.subscribe(data => {
-      //  console.log("Got our frisbees!", data)
-       this.showing = data;
-       console.log(this.showing," this is the frisbee we are showing")
-    });
-  }
-
-  postFrisbeesFromService(data){
-    let observable = this._httpService.postFrisbees(data);
-    observable.subscribe(data => {
-      //  console.log("Got our frisbees!", data)
-       this.frisbees = data;
-      //  console.log(this.frisbees)
-      this.getFrisbeesFromService()
-    });
-  }
-
-  deleteFrisbeeFromService(id){
-    console.log(id," is the id");
+  rateFrisbee(id){
+    // console.log("Called rateCake ");
+    // console.log(this.ratedCake);
+    // console.log("Stars :" +this.ratedCake.stars);
+    // console.log("Id :" +id)
+    // console.log("Stars :" +this.ratedCake.comment);
     
-    let observable = this._httpService.deleteFrisbee(id);
-    observable.subscribe(data =>{
-      this.showing =""
-      this.getFrisbeesFromService()})
-  }
 
-  updateFrisbeeFromService(data){
-    let id = data._id
-    let observable = this._httpService.putFrisbees(id,data);
-    observable.subscribe(data =>{
-      this.update = ""
-      this.getFrisbeesFromService()})
-      this.showing =data
-  }
+    this.ratedFrisbee = {stars:this.ratedFrisbee.stars,
+                 comment: this.ratedFrisbee.comment}
+    this._httpService.rateFrisbees(this.ratedFrisbee).subscribe(data=>{this,this.ratedFrisbee = data;})
+}
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { HttpService } from '../http.service';
+import { Frisbee } from './../frisbee';
+
 
 
 @Component({

@@ -1,9 +1,60 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+
+<div class="container">  
   <h1>
     Welcome to {{ greet }}!
   </h1>
-
+    <br>
+    <div class="add">
+      <div *ngIf="error">{{ error }}</div>
+        <form (submit)="onSubmit()">
+          Type:       
+          <input type="text" 
+          name="newFrisbee.type" 
+          [(ngModel)]="newFrisbee.type" 
+          required 
+          minlength="2" 
+          maxlength="32" 
+          #type="ngModel"
+          >
+          <br>
+          Image:       
+          <input type="text" 
+          name="newFrisbee.image" 
+          [(ngModel)]="newFrisbee.image" 
+          required 
+          minlength="2" 
+          maxlength="255" 
+          #image="ngModel"
+          >
+          <input type="submit" value="Submit">
+            <button (click)="goHome()">Cancel</button>
+        </form>
+      </div>
+  </div>
+<br>
+<div class="col-sm">
+  <div class="frisbeeList">  
+    <div *ngFor="let f of frisbees">
+      <form class="form" id="frisbeeForm" (submit)="rateFrisbee(frisbee._id)">
+        <input type="hidden" [(ngModel)]="frisbee['_id']" name="frisbee._id"  >
+            <select [(ngModel)]="ratedFrisbee.stars" name="ratedFrisbee.stars" >
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+            </select>
+            <input type="text" [(ngModel)]="ratedFrisbee.comment" name="comment" class="form-control">
+            
+            
+            
+            <button  class="btn btn-primary btn-sm" >Rate</button>
+      </form>
+      <img   src="{{frisbee['image']}}" width="100" height="100">
+    </div>                      
+  </div>
+</div>
+<br>
 <app-frisbee></app-frisbee>
 
 

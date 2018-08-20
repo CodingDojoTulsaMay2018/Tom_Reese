@@ -30,4 +30,7 @@ export class HttpService {
   deleteFrisbee(id){
     return this._http.delete('/frisbees/'+id);
   }
+  rateFrisbees(frisbee){
+    return this._http.post('/frisbees/'+frisbee.id, frisbee);
+  }
 }

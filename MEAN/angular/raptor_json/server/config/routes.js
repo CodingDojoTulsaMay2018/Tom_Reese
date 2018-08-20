@@ -3,8 +3,7 @@ const path = require('path');
 
 
 module.exports = (app) => {
-    console.log("in the routes...."),
-    
+
     app.get("/raptor", raptor.index),
     app.post("/raptor", raptor.new),
     app.post("/raptor/:id", raptor.rate),

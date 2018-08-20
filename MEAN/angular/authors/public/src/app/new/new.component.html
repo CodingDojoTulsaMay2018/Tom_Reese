@@ -1,0 +1,25 @@
+<div class="container">
+    <a [routerLink]="['/']">Home</a>
+    <br>
+    <h3>Add an author</h3>
+    <div class="add">
+      {{ name.errors | json }}
+      <div *ngIf="error">{{ error }}</div>
+        <form (submit)="onAdd()">
+          Name:       
+          <input type="text" 
+          name="newAuthor.name" 
+          [(ngModel)]="newAuthor.name" 
+          required 
+          minlength="2" 
+          maxlength="64" 
+          #name="ngModel"
+          >
+          <div *ngIf="name.valid">
+              <input type="submit" value="Add Author">
+            </div>    
+            <button (click)="goHome()">Cancel</button>
+            <div *ngIf="name.valid">Your name is now valid!!</div>
+        </form>
+      </div>
+      </div>

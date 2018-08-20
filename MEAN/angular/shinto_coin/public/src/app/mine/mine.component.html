@@ -1,0 +1,15 @@
+
+<h2>You can mine new coins by answering questions correctly.  Good luck!</h2>
+<br>
+<br>
+<div *ngIf="question.length">
+  {{ question[question.length-1][0] }}
+  <form (submit)="onAnswer($event)" >
+    <input type="text" name="attempt" [(ngModel)]="attempt" >
+    <input type="submit" value="Mine!">
+  </form>
+  {{ reply }}
+</div>
+<div *ngIf="!question.length">We are out of questions!!!</div>
+
+

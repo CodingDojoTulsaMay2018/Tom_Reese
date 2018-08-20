@@ -1,6 +1,7 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { HttpService } from '../http.service';
-
+import { Component, OnInit } from '@angular/core';
+import { Task } from './../task';
+import { ActivatedRoute, Router } from '@angular/router';
+import { HttpService } from './../http.service';
 
 @Component({
   selector: 'app-task',
@@ -8,12 +9,48 @@ import { HttpService } from '../http.service';
   styleUrls: ['./task.component.css']
 })
 export class TaskComponent implements OnInit {
-  // @Input() tom: any
-  // @Output() myEvent = new EventEmitter()
+  editTask: Task
+  error = ""
 
-  constructor(private _httpService: HttpService) { }
+  constructor(
+    private httpService: HttpService,
+    private _route: ActivatedRoute,
+    private _router: Router
+  ) { }
 
   ngOnInit() {
+    this._route.params.subscribe(params => {
+      console.log(params['id']);
+      this.httpService.getTask(params['id']).subscribe(task => {
+        this.editTask = task as Task
+        console.log('product: ', this.editTask);
+      });
+    });
   }
+
+  onUpdate() {
+    this.httpService.putTask(this.editTask['_id'],this.editTask).subscribe(data =>{
+      console.log(data["message"])
+      if(data['errors']){
+        this.error = data['message']
+      }  
+      else{
+        this._router.navigate(['/tasks']);
+  
+      }
+  })}
+  
+  onDelete(id){
+    console.log("deleting ",id);
+    let observable = this.httpService.deleteTask(id);
+    observable.subscribe()
+    this._router.navigate(['/tasks']);
+  
+    }
+  
+    goHome(){
+      this._router.navigate(['/']);
+    }
+
 
 }

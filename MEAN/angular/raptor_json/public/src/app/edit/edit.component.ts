@@ -43,7 +43,13 @@ onUpdate() {
     }
 })}
 
+onDelete(id){
+  console.log("deleting ",id);
+  let observable = this.httpService.deleteRaptor(id);
+  observable.subscribe()
+  this._router.navigate(['/']);
 
+  }
 
   goHome(){
     this._router.navigate(['/']);

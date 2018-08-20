@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
+import { Task } from './task';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +15,7 @@ export class HttpService {
      return this._http.get('/tasks');
    }
 
-   postTasks(task){
+  postTasks(task){
     return this._http.post('/tasks', task);
   }
 
@@ -23,7 +23,7 @@ export class HttpService {
     return this._http.get('/tasks/'+id);
   }
 
-  putTasks(id,task){
+  putTask(id,task){
     return this._http.put('/tasks/'+id, task);
   }
 

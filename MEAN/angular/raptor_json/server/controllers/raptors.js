@@ -41,7 +41,7 @@ module.exports = {
     show: (req, res) => {        
         Raptor.findById(req.params.id)
         .then(result => res.json(result))
-        .catch(err => res.send(err))  
+        .catch(err => res.json(err))  
     },
     update: (req, res) => {
         Raptor.findByIdAndUpdate(req.params.id, {$set: req.body}, (err, raptor)=>{

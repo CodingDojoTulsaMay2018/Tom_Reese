@@ -15,7 +15,7 @@
       <tr *ngFor="let i of raptors">
         <td>{{ i.name }}</td>
         <td>{{ i.ability }}</td>
-        <td><button [routerLink]="['/edit', i._id]">Edit</button> &nbsp; <button (click)="onDelete(i._id)">Delete</button></td>
+        <td><button [routerLink]="['/edit', i._id]">Edit</button></td>
       </tr>
     </tbody>
   </table>

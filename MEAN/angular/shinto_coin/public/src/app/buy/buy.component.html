@@ -1,0 +1,11 @@
+<h2>Buy more coins now!!!</h2>
+<br>
+<br>
+  Current Shinto Coin Value: ${{ cost }} <br>
+  Current Coin Amount: {{ coins }}
+  <form (submit)="onBuy()" >
+    <input type="number"  name="number" [(ngModel)]="number" >
+    <input type="submit" value="Buy!">
+  </form>
+<div *ngIf="msg">{{ msg }}</div>
+
