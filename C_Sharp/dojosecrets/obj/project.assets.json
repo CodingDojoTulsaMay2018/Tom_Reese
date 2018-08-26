@@ -12257,7 +12257,7 @@
       ]
     },
     "System.Security.Cryptography.Xml/4.4.2": {
-      "sha512": "q9Dren/YP5jhRCkDvLfuaPpMTQzP97ANvzq/OoGgwK8YdLRSTABS9oW5/23OKoM2DRCuBrh4qaecD2YNhPtuzQ==",
+      "sha512": "1m+fKVrApgKYMRuE0MF0vGjqy4XqAp1rCtyAzMXhJajMDDytMh/rHk9hp4M7KKk3QQZoWJUvyUY7xcw74w+JiQ==",
       "type": "package",
       "path": "system.security.cryptography.xml/4.4.2",
       "files": [
@@ -13478,11 +13478,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\WhiteyBear\\Desktop\\Bootcamp\\Tom_Reese\\C_Sharp\\dojosecrets\\dojosecrets.csproj",
+      "projectUniqueName": "C:\\Users\\WhiteyBear\\desktop\\bootcamp\\tom_reese\\c_sharp\\dojosecrets\\dojosecrets.csproj",
       "projectName": "dojosecrets",
-      "projectPath": "c:\\Users\\WhiteyBear\\Desktop\\Bootcamp\\Tom_Reese\\C_Sharp\\dojosecrets\\dojosecrets.csproj",
+      "projectPath": "C:\\Users\\WhiteyBear\\desktop\\bootcamp\\tom_reese\\c_sharp\\dojosecrets\\dojosecrets.csproj",
       "packagesPath": "C:\\Users\\WhiteyBear\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\WhiteyBear\\Desktop\\Bootcamp\\Tom_Reese\\C_Sharp\\dojosecrets\\obj\\",
+      "outputPath": "C:\\Users\\WhiteyBear\\desktop\\bootcamp\\tom_reese\\c_sharp\\dojosecrets\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

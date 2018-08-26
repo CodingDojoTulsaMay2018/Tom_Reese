@@ -1,13 +1,21 @@
+<div class="container">
+  <h1>Your Local Weather Conditions</h1>
 
-<h1>Dojo Weather Forecast</h1>
+  <button class="btn btn-sm btn-info" [routerLink]="['/burbank']" >Load Burbank</button>
+  <button class="btn btn-sm btn-info" [routerLink]="['/chicago']" >Load Chicago</button>
+  <button class="btn btn-sm btn-info" [routerLink]="['/dallas']" >Load Dallas</button>
+  <button class="btn btn-sm btn-info" [routerLink]="['/dc']" >Load DC</button>
+  <button class="btn btn-sm btn-info" [routerLink]="['/sanjose']" >Load SanJose</button>
+  <button class="btn btn-sm btn-info" [routerLink]="['/seattle']" >Load Seattle</button>
+  <br>
+  <br>
 
-<button [routerLink]="['/burbank']" >Load Burbank</button>
-<button [routerLink]="['/chicago']" >Load Chicago</button>
-<button [routerLink]="['/dallas']" >Load Dallas</button>
-<button [routerLink]="['/dc']" >Load DC</button>
-<button [routerLink]="['/sanjose']" >Load SanJose</button>
-<button [routerLink]="['/seattle']" >Load Seattle</button>
+  Custom Search <input #box (keyup.enter)="onEnter(box.value)">
+  <br>
+  <div class="api">
 
-<div class="api">
-  <router-outlet></router-outlet>
+    <router-outlet><br> </router-outlet>
+
+    <span *ngIf="!check">Click on a button to find weather information for that particular city, or use the search bar to find information on a specific city.  Please note: if you perform a custom search then include the country as well (I.E. "London,UK"), search queries should be limited to major cities.</span> 
+  </div>
 </div>

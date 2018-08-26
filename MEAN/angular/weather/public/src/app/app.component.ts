@@ -5,11 +5,22 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  // template: `
+  // <input #box (keyup.enter)="onEnter(box.value)">
+  // <p>{{value}}</p>`
 })
 export class AppComponent implements OnInit  {
   title = 'public';
-  weather: any
+  weather
+  temp
+  high
+  low
+  avg
+  status
+  humidity
+  check = false
+  city = ""
 
   constructor(
     private _httpService: HttpService,
@@ -23,10 +34,14 @@ export class AppComponent implements OnInit  {
     // this.getWeather()
   });
   }
+  
+  onEnter(value: string){
+    this._router.navigate(['/custom/',value];
+    this.check = true  
+    )}
 
   goHome() {
     this._router.navigate(['/home']);
   }
 
 }
-// api.openweathermap.org/data/2.5/weather?q=${city}&APPID=6fb381816186853e07a832b486096e22

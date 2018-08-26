@@ -1,3 +1,5 @@
+import { CustomComponent } from './custom/custom.component';
+import { AppComponent } from './app.component';
 import { BurbankComponent } from './burbank/burbank.component';
 import { ChicagoComponent } from './chicago/chicago.component';
 import { DallasComponent } from './dallas/dallas.component';
@@ -14,12 +16,13 @@ const routes: Routes = [
   { path: 'dallas',component: DallasComponent },
   { path: 'dc',component: DcComponent },
   { path: 'sanjose',component: SanjoseComponent },
+  { path: 'custom/:city',component: CustomComponent },
   { path: 'seattle',component: SeattleComponent },
   { path: 'pagenotfound',component: PagenotfoundComponent },
   // use a colon and parameter name to include a parameter in the url
   { path: 'burbank/:id', component: BurbankComponent },
   // redirect to /alpha if there is nothing in the url
-  { path: '', pathMatch: 'full', redirectTo: '/burbank' },
+  { path: '', pathMatch: 'full', redirectTo: '/' },
   // the ** will catch anything that did not match any of the above routes
   { path: '**', component: PagenotfoundComponent }
 ];

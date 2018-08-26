@@ -13,6 +13,7 @@ import { DallasComponent } from './dallas/dallas.component';
 import { DcComponent } from './dc/dc.component';
 import { ChicagoComponent } from './chicago/chicago.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { CustomComponent } from './custom/custom.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     DallasComponent,
     DcComponent,
     ChicagoComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    CustomComponent
   ],
   imports: [
     BrowserModule,

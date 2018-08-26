@@ -37,3 +37,11 @@ img {
 
     text-align: center;
 }
+
+form {
+    width: 134px;
+}
+
+.buttons {
+    display: inline-flex
+}
